@@ -1,0 +1,9 @@
+@import 'reset.css';
+@font-face {
+font-family: 'Pragmatica';
+src: url("../fonts/PRG65.otf") format('onetype');
+}
+@font-face {
+font-family: 'Pragmatica_bold';
+src: url("../fonts/PRG75.otf") format('onetype');
+}
