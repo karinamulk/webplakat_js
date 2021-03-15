@@ -48,6 +48,7 @@
         top: 0; bottom: 0; left: 0; right: 0;
         padding: 0;
         opacity: 50%;
+        overflow: hidden;
         /* background: yellow; */
       }
       .first {
@@ -465,9 +466,117 @@
         text-decoration: none;
         margin-right: 2.9%;
       }
+
+
+
+      .izv1 {
+        position: absolute;
+        right: -2.78%;
+        top: 0%;
+        width: 52.78%;
+        height: 67.93%;
+        background-color: blue;
+        background: url( 'images/first1.svg');
+        background-size: 2000% 100% ;
+        background-position: -0 top;
+        animation: izv1 1s steps(1) alternate infinite;
+      }
+      @keyframes izv1 {
+        0% {background-position: 0 top;}
+        5% {background-position: -100% top;}
+        10% {background-position: -200% top;}
+        15% {background-position: -300% top;}
+        20% {background-position: -400% top;}
+        25% {background-position: -500% top;}
+        30% {background-position: -600% top;}
+        35% {background-position: -700% top;}
+        40% {background-position: -800% top;}
+        45% {background-position: -900% top;}
+        50% {background-position: -1000% top;}
+        55% {background-position: -1100% top;}
+        60% {background-position: -1200% top;}
+        65% {background-position: -1300% top;}
+        70% {background-position: -1400% top;}
+        75% {background-position: -1500% top;}
+        80% {background-position: -1600% top;}
+        85% {background-position: -1700% top;}
+        90% {background-position: -1800% top;}
+        95% {background-position: -1900% top;}
+      }
+      .izv2 {
+        position: absolute;
+        right: -2.78%;
+        top: 0%;
+        width: 102.56%;
+        height: 100%;
+        background: url( 'images/first2.svg');
+        background-size: 2000% 100% ;
+        background-position: -0 top;
+        animation: izv1 1s steps(1) alternate infinite;
+      }
+
+
+      .izv_vision  {
+        position: absolute;
+        width: 63.5%;
+        bottom: 7.16%;
+        left: -8%;
+      }
+
+      .vision_color1 path {
+        fill: #A4DDD4;
+        transition: all .2s;
+      }
+      .vision_color2 path {
+        fill: #F28EC0;
+        transition: all .2s;
+
+      }
+      .vision_color3 path {
+        fill: #F8E436;
+        transition: all .2s;
+
+      }
     </style>
     <script type="text/javascript">
+    $(document).ready(function(){
 
+      $("#color1").hover(function(){
+        if ($(".izv_vision").hasClass("vision_color2")) {
+          $(".izv_vision").removeClass("vision_color2");
+        }
+        if ($(".izv_vision").hasClass("vision_color3")) {
+          $(".izv_vision").removeClass("vision_color3");
+        }
+      	$(".izv_vision").addClass("vision_color1");
+      });
+      $("#color2").hover(function(){
+        if ($(".izv_vision").hasClass("vision_color1")) {
+          $(".izv_vision").removeClass("vision_color1");
+        }
+        if ($(".izv_vision").hasClass("vision_color3")) {
+          $(".izv_vision").removeClass("vision_color3");
+        }
+      	$(".izv_vision").addClass("vision_color2");
+      });
+      $("#color3").hover(function(){
+        if ($(".izv_vision").hasClass("vision_color1")) {
+          $(".izv_vision").removeClass("vision_color1");
+        }
+        if ($(".izv_vision").hasClass("vision_color2")) {
+          $(".izv_vision").removeClass("vision_color2");
+        }
+      	$(".izv_vision").addClass("vision_color3");
+      });
+
+
+      let a = 0;
+      $("#bottom_plus").click(function(){
+        a += 10;
+        $(".izv_vision").css("filter", "blur(5px)");
+        if (a>= 20) { a = 0}
+      });
+    });
 
 
 
@@ -478,7 +587,8 @@
       <div class="sootnosheniye">
         <div class="content">
           <div class="first">
-            <!-- <img src="images/vision.svg" alt="" id="test"> -->
+            <div class="izv1"></div>
+            <div class="izv2"></div>
             <div class="think_counter">
               <img src="images/think_counter.svg" alt="" id="think_counter_image">
               <p id="think_counter1">мысли</p>
@@ -517,6 +627,7 @@
               <div class="color_round" id="color2"></div>
               <div class="color_round" id="color3"></div>
             </div>
+
             <div class="blurblock">
               <div class="blur_title">
                 <p id="blur_text">чёткость</p>
@@ -532,7 +643,9 @@
               </div>
             </div>
             <p class="names" id="name3">зрительный нерв</p>
-            <div class="vision_mask"></div>
+            <svg width="921" height="761" viewBox="0 0 921 761" fill="none" xmlns="http://www.w3.org/2000/svg" class="izv_vision">
+            <path d="M201.376 400.578H-4.19336V440.578H201.376C223.467 440.578 241.376 422.67 241.376 400.578V120.578H320.438V300.578C320.438 333.715 347.3 360.578 380.438 360.578C413.575 360.578 440.438 333.715 440.438 300.578V60.5781C440.438 49.5324 449.392 40.5781 460.438 40.5781C471.483 40.5781 480.438 49.5324 480.438 60.5781V400.578C480.438 422.67 498.346 440.578 520.438 440.578H680.437C702.529 440.578 720.437 422.669 720.437 400.578V200.578H880.437V620.578C880.437 631.624 871.483 640.578 860.437 640.578C849.392 640.578 840.437 631.624 840.437 620.578V580.578C840.437 547.441 813.574 520.578 780.437 520.578C747.3 520.578 720.437 547.441 720.437 580.578V720.578H360.438V640.578H580.437C613.574 640.578 640.437 613.715 640.437 580.578C640.437 547.441 613.574 520.578 580.437 520.578H-4.19336V560.578H580.437C591.483 560.578 600.437 569.532 600.437 580.578C600.437 591.624 591.483 600.578 580.437 600.578H360.438C338.346 600.578 320.438 618.487 320.438 640.578V720.578C320.438 742.669 338.346 760.578 360.438 760.578H720.437C742.529 760.578 760.437 742.669 760.437 720.578V580.578C760.437 569.532 769.392 560.578 780.437 560.578C791.483 560.578 800.437 569.532 800.437 580.578V620.578C800.437 653.715 827.3 680.578 860.437 680.578C893.574 680.578 920.437 653.715 920.437 620.578V200.578C920.437 178.487 902.529 160.578 880.437 160.578H720.437C698.346 160.578 680.437 178.487 680.437 200.578V400.578H520.437V60.578C520.437 27.441 493.574 0.578125 460.437 0.578125C427.3 0.578125 400.438 27.441 400.438 60.578V300.578C400.438 311.624 391.483 320.578 380.438 320.578C369.392 320.578 360.438 311.624 360.438 300.578V120.578C360.438 98.4867 342.529 80.5781 320.438 80.5781H241.376C219.284 80.5781 201.376 98.4867 201.376 120.578V400.578Z" fill="#F28EC0"/>
+            </svg>
           </div>
           <div class="third">
             <div class="keyboard" id="keyboard1">
@@ -563,7 +676,7 @@
               <p id="line_text2">_</p>
             </div>
             <div class="bottom_bar">
-              <p class="bar_text" id="bar_text1">HSE ADC</p>
+              <p class="bar_text" id="bar_text1">HSE&nbspADC</p>
               <p class="bar_text">2021</p>
               <div class="bar_text" id="bar_text3"></div>
               <a href="#" class="bar_text" id="bar_text4">@mulkamanova</a>
