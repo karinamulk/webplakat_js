@@ -1,4 +1,7 @@
 @import 'reset.css';
+@import "first.css";
+@import "second.css";
+@import "third.css";
 @font-face {
 font-family: 'Pragmatica';
 src: url("../fonts/PRG65.otf");
@@ -6,4 +9,8 @@ src: url("../fonts/PRG65.otf");
 @font-face {
 font-family: 'Pragmatica_bold';
 src: url("../fonts/PRG75.otf");
+}
+@font-face {
+font-family: 'PT Mono';
+src: url("../fonts/ofont.ru_PT Mono.ttf");
 }
