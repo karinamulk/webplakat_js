@@ -1,0 +1,125 @@
+.think_counter {
+  position: absolute;
+  width: 22.3%;
+  height: 15.8%;
+  top: 7.2%;
+  left: 5.5%;
+  /* background: blue; */
+}
+#think_counter_image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#think_counter1 {
+  position: absolute;
+  font-size: 30px;
+  color: #A4DDD4;
+  left: calc(50% - 47px);
+  top: 16.5%;
+}
+.think_counter_result {
+  font-family: PT Mono;
+  position: absolute;
+  font-size: 90px;
+  color: #A4DDD4;
+  bottom: 15%;
+}
+#think_counter_result1 {
+  left: 16.4%;
+}
+#think_counter_result2 {
+  left: 33.2%;
+}
+#think_counter_result3 {
+  right: 33.2%;
+}
+#think_counter_result4 {
+  right: 16.4% ;
+}
+
+.activity {
+  position: absolute;
+  height: 10%;
+  width: 26%;
+  background: #A4DDD4;
+  border: 5px solid #71B4A9;
+  border-radius: 20px;
+  top: 26.2%;
+  left: 5.5%;
+}
+#activity_text {
+  position: absolute;
+  font-size: 30px;
+  color: black;
+  left: calc(50% - 102px);
+  top: 11%;
+}
+#point1, #point2 {
+  font-family: PT Mono;
+  position: absolute;
+  font-size: 24px;
+  color: black;
+  bottom: 7%;
+}
+#point1 {
+  left: 5%;
+}
+#point2 {
+  right: 2%;
+}
+.activeline {
+  position: absolute;
+  height: 22.1%;
+  background: #F28EC0;
+  border-radius: 15px;
+  bottom: 32%;
+  width: 86%;
+  left: 7%;
+}
+
+
+
+
+.mode {
+  position: absolute;
+  bottom: 8.1%;
+  right: 2.75%;
+  width: 25%;
+  height: 18.9%;
+  /* background: blue; */
+}
+.mode_screen {
+  position: absolute;
+  height: 37%;
+  width: 97%;
+  background: #A4DDD4;
+  border: 5px solid #71B4A9;
+  border-radius: 20px;
+  top: 21%;
+}
+#mode_text {
+  position: absolute;
+  font-size: 36px;
+  color: black;
+  top: calc(50% - 18px);
+  left: calc(50% - 112px);
+}
+#mode_left, #mode_right {
+  position: absolute;
+  width: 35%;
+  bottom: 0;
+}
+#mode_left {
+  left: 0;
+}
+#mode_right {
+  right: 0;
+}
+#mode_title {
+  position: absolute;
+  font-size: 36px;
+  color:#A4DDD4;
+  top: 0;
+  left: calc(50% - 124px);
+}
