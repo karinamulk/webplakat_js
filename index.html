@@ -521,6 +521,7 @@
         width: 63.5%;
         bottom: 7.16%;
         left: -8%;
+        filter: blur(4px);
       }
 
       .vision_color1 path {
@@ -570,12 +571,36 @@
       });
 
 
-      let a = 0;
+      let a = 4;
+      let blur_1;
       $("#bottom_plus").click(function(){
-        a += 10;
-        $(".izv_vision").css("filter", "blur(5px)");
-        if (a>= 20) { a = 0}
+
+        if (a <= 8) {
+          a += 2;
+          blur_1 = "blur("+a+"px)";
+
+          $(".izv_vision").css("filter", blur_1);
+        }
+        console.log(a);
+        console.log(blur_1);
       });
+      $("#bottom_minus").click(function(){
+
+        if (a >= 2) {
+          a -= 2;
+          blur_1 = "blur("+a+"px)";
+
+          $(".izv_vision").css("filter", blur_1);
+        }
+        console.log(a);
+        console.log(blur_1);
+      });
+
+      let serious = [
+        "привет",
+        "пока"
+      ]
+      console.log(serious[1])
     });
 
 
