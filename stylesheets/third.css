@@ -1,0 +1,162 @@
+.keyboard {
+  position: absolute;
+  width: 8.33%;
+  height: 15.4%;
+  background: #F28EC0;
+  border-radius: 20px;
+}
+.keyboard_text {
+  position: absolute;
+  font-size: 36px;
+  color: black;
+  top: calc(50% - 17px);
+}
+#keyboard1 {
+  top: 0;
+  right: 31.2%;
+}
+#keyboard2 {
+  width: 22%;
+  top: 21%;
+  left: 29.9%;
+}
+#keyboard4 {
+  top: 41.5%;
+  right: 31.2%;
+}
+#keyboard5 {
+  width: 17.22%;
+  top: 41.5%;
+  left: 29.5%;
+  background: none;
+}
+#keyboard_img {
+  width: 100%;
+}
+#keyboard3 {
+  top: 41.5%;
+  left: 49.43%;
+}
+#keyboard_S {
+  left: 14%;
+  top: 8%;
+}
+#keyboard_Y {
+  right: 14%;
+  top: auto;
+  bottom: 8%;
+}
+#keyboard_SHIFT {
+  left: calc(50% - 50px);
+}
+#keyboard_ALT {
+  left: calc(50% - 30px);
+}
+#keyboard_SAVE {
+  left: calc(50% - 47px);
+}
+/* .vision_mask {
+  mask-type: alpha;
+  width: 55.56%;
+  height: 68.07%;
+  -webkit-mask: url("https://karinamulk.github.io/homework-NewYear2021/images/vision.svg");
+  background-color: #F28EC0;
+  position: absolute;
+  left: 0;
+  top: 25%;
+  transition: all .5s;
+} */
+.light_cross {
+  position: absolute;
+  /* background: blue; */
+  width: 5.56%;
+  height: 10.28%;
+  right: 8.25%;
+  top: 36.9%;
+}
+.cross {
+  position: absolute;
+  width: 27.5%;
+  height: 100%;
+  background: #A4DDD4;
+  border-radius: 10px;
+  left: calc(50% - 11px);
+}
+#cross1 {
+  transform: rotate(-45deg);
+}
+#cross2 {
+  transform: rotate(45deg);
+}
+.light_round {
+  position: absolute;
+  background: #F28EC0;
+  width: 5.56%;
+  height: 10.28%;
+  right: 8.25%;
+  top: 56.9%;
+  border-radius: 50%;
+}
+/* #test {
+  display: none;
+} */
+#triangle_mask {
+  display: none;
+}
+.light_triangle {
+  mask-type: alpha;
+  width: 5%;
+  height: 8.35%;
+  -webkit-mask: url("https://karinamulk.github.io/webplakat_js/images/triangle.svg");
+  background-color: #F8E436;
+  position: absolute;
+  right: 8.5%;
+  top: 16.6%;
+}
+.line {
+  position: absolute;
+  width: 100%;
+  height: 6.3%;
+  bottom: 17.6%;
+  background-color: #F28EC0;
+}
+#line_text {
+  font-size: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 231px)
+}
+#line_text2 {
+  font-size: 30px;
+  position: absolute;
+  top: calc(50% - 17px);
+  right: 32.8%;
+}
+.bottom_bar {
+  position: absolute;
+  width: 100%;
+  height: 16.1%;
+  bottom: 1.5%;
+  /* background: black; */
+  display: flex;
+  justify-content: space-between;
+}
+.bar_text {
+  font-size: 36px;
+  color: #A4DDD4;
+  padding: 1.75% 1.3%;
+  border: 5px solid #A4DDD4;
+  margin: 1.1% 1% 1.1% 1%;
+}
+#bar_text1 {
+  margin-left: 2.9%;
+}
+#bar_text3 {
+  width: 39.6%;
+}
+#bar_text4 {
+  font-family: Pragmatica;
+  color: #A4DDD4;
+  text-decoration: none;
+  margin-right: 2.9%;
+}
