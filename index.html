@@ -9,7 +9,7 @@
       body{
         width: 100%;
         margin: 0;
-        background: white;
+        background: black;
         display: block;
         position: relative;
       }
@@ -19,7 +19,7 @@
         left: 0;
         top: 0;
         right: 0;
-        background: url( 'images/MacBook Pro - 15.jpg');
+        /* background: url( 'images/MacBook Pro - 15.jpg'); */
         width: 100%;
         height: 100%;
         background-size: 100% auto ;
@@ -47,7 +47,7 @@
         position: absolute;
         top: 0; bottom: 0; left: 0; right: 0;
         padding: 0;
-        opacity: 50%;
+        /* opacity: 50%; */
         overflow: hidden;
         /* background: yellow; */
       }
@@ -55,19 +55,19 @@
         position: relative;
         width: 100%;
         height: 37.1%;
-        background: red;
+        /* background: red; */
       }
       .second {
         position: relative;
         width: 100%;
         height: 37.1%;
-        background: blue;
+        /* background: blue; */
       }
       .third {
         position: relative;
         width: 100%;
         height: 25.8%;
-        background: green;
+        /* background: green; */
       }
 
       p {
@@ -169,6 +169,35 @@
       .blocker {
         display: none;
       }
+      .izv_second2 {
+        position: absolute;
+        top: -10%;
+        right: 0%;
+        width: 52.78%;
+        height: 84.44%;
+        background: url( 'images/izv_mode1.svg');
+        background-size: 2000% 100%;
+        background-position: -0 top;
+      }
+      .izv_second1 {
+        position: absolute;
+        top: -40%;
+        left: 0.04%;
+        width: 50%;
+        height: 80.11%;
+        background: url( 'images/izv_mode2.svg');
+        background-size: 2000% 100%;
+        background-position: -0 top;
+      }
+      .buttom_rotate_30 {
+        transform: rotate(-30deg);
+      }
+      .buttom_rotate_0 {
+        transform: rotate(0deg);
+      }
+      .buttom_rotate30 {
+        transform: rotate(30deg);
+      }
     </style>
     <script type="text/javascript">
     $(document).ready(function(){
@@ -255,6 +284,351 @@
         }
       }, 100);
 
+
+      let izv_second_counter2 = 1;
+      $(".buttom_handle2").click(function(){
+        if (izv_second_counter2 == 4) {
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1000%");
+          }, 20);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-900%");
+          }, 30);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-800%");
+          }, 40);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-700%");
+          }, 50);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-600%");
+          }, 60);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-500%");
+          }, 70);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-400%");
+          }, 80);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-300%");
+          }, 90);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-200%");
+          }, 100);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-100%");
+          }, 110);
+          izv_second_counter2 = 5;
+          console.log(izv_second_counter2);
+
+          if ($("#handle_box2").hasClass("buttom_rotate_0")) {
+            $("#handle_box2").removeClass("buttom_rotate_0");
+          }
+          if ($("#handle_box2").hasClass("buttom_rotate30")) {
+            $("#handle_box2").removeClass("buttom_rotate30");
+          }
+          $("#handle_box2").addClass("buttom_rotate_30");
+        }
+        if (izv_second_counter2 == 3) {
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1900.001%");
+          }, 20);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1800%");
+          }, 30);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1700%");
+          }, 40);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1600%");
+          }, 50);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1500%");
+          }, 60);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1400%");
+          }, 70);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1300%");
+          }, 80);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1200%");
+          }, 90);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1100%");
+          }, 100);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1000%");
+          }, 110);
+          izv_second_counter2 += 1;
+          console.log(izv_second_counter2);
+          if ($("#handle_box2").hasClass("buttom_rotate_30")) {
+            $("#handle_box2").removeClass("buttom_rotate_30");
+          }
+          if ($("#handle_box2").hasClass("buttom_rotate30")) {
+            $("#handle_box2").removeClass("buttom_rotate30");
+          }
+          $("#handle_box2").addClass("buttom_rotate_0");
+
+        }
+        if (izv_second_counter2 == 2) {
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1000%");
+          }, 20);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1200%");
+          }, 30);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1300%");
+          }, 40);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1400%");
+          }, 50);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1500%");
+          }, 60);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1600%");
+          }, 70);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1700%");
+          }, 80);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1800%");
+          }, 90);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1900.001%");
+          }, 100);
+          izv_second_counter2 += 1;
+          console.log(izv_second_counter2);
+          if ($("#handle_box2").hasClass("buttom_rotate_30")) {
+            $("#handle_box2").removeClass("buttom_rotate_30");
+          }
+          if ($("#handle_box2").hasClass("buttom_rotate_0")) {
+            $("#handle_box2").removeClass("buttom_rotate_0");
+          }
+          $("#handle_box2").addClass("buttom_rotate30");
+
+        }
+        if (izv_second_counter2 == 1) {
+
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-100%");
+          }, 20);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-200%");
+          }, 30);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-300%");
+          }, 40);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-400%");
+          }, 50);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-500%");
+          }, 60);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-600%");
+          }, 70);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-700%");
+          }, 80);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-800%");
+          },90);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-900%");
+          }, 100);
+          setTimeout(function(){
+            $(".izv_second2").css("background-position","-1000%");
+          }, 110);
+          izv_second_counter2 += 1;
+          console.log(izv_second_counter2);
+          if ($("#handle_box2").hasClass("buttom_rotate_30")) {
+            $("#handle_box2").removeClass("buttom_rotate_30");
+          }
+          if ($("#handle_box2").hasClass("buttom_rotate30")) {
+            $("#handle_box2").removeClass("buttom_rotate30");
+          }
+          $("#handle_box2").addClass("buttom_rotate_0");
+        }
+        if (izv_second_counter2 == 5) {
+          izv_second_counter2 = 1;
+        }
+      });
+
+
+      let izv_second_counter1 = 1;
+      $(".buttom_handle1").click(function(){
+        if (izv_second_counter1 == 4) {
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1000%");
+          }, 20);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-900%");
+          }, 30);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-800%");
+          }, 40);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-700%");
+          }, 50);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-600%");
+          }, 60);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-500%");
+          }, 70);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-400%");
+          }, 80);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-300%");
+          }, 90);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-200%");
+          }, 100);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-100%");
+          }, 110);
+          izv_second_counter1 = 5;
+          console.log(izv_second_counter1);
+
+          if ($("#handle_box1").hasClass("buttom_rotate_0")) {
+            $("#handle_box1").removeClass("buttom_rotate_0");
+          }
+          if ($("#handle_box1").hasClass("buttom_rotate30")) {
+            $("#handle_box1").removeClass("buttom_rotate30");
+          }
+          $("#handle_box1").addClass("buttom_rotate_30");
+        }
+        if (izv_second_counter1 == 3) {
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1900.001%");
+          }, 20);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1800%");
+          }, 30);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1700%");
+          }, 40);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1600%");
+          }, 50);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1500%");
+          }, 60);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1400%");
+          }, 70);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1300%");
+          }, 80);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1200%");
+          }, 90);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1100%");
+          }, 100);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1000%");
+          }, 110);
+          izv_second_counter1 += 1;
+          console.log(izv_second_counter1);
+          if ($("#handle_box1").hasClass("buttom_rotate_30")) {
+            $("#handle_box1").removeClass("buttom_rotate_30");
+          }
+          if ($("#handle_box1").hasClass("buttom_rotate30")) {
+            $("#handle_box1").removeClass("buttom_rotate30");
+          }
+          $("#handle_box1").addClass("buttom_rotate_0");
+
+        }
+        if (izv_second_counter1 == 2) {
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1000%");
+          }, 20);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1200%");
+          }, 30);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1300%");
+          }, 40);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1400%");
+          }, 50);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1500%");
+          }, 60);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1600%");
+          }, 70);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1700%");
+          }, 80);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1800%");
+          }, 90);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1900.001%");
+          }, 100);
+          izv_second_counter1 += 1;
+          console.log(izv_second_counter1);
+          if ($("#handle_box1").hasClass("buttom_rotate_30")) {
+            $("#handle_box1").removeClass("buttom_rotate_30");
+          }
+          if ($("#handle_box1").hasClass("buttom_rotate_0")) {
+            $("#handle_box1").removeClass("buttom_rotate_0");
+          }
+          $("#handle_box1").addClass("buttom_rotate30");
+
+        }
+        if (izv_second_counter1 == 1) {
+
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-100%");
+          }, 20);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-200%");
+          }, 30);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-300%");
+          }, 40);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-400%");
+          }, 50);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-500%");
+          }, 60);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-600%");
+          }, 70);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-700%");
+          }, 80);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-800%");
+          },90);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-900%");
+          }, 100);
+          setTimeout(function(){
+            $(".izv_second1").css("background-position","-1000%");
+          }, 110);
+          izv_second_counter1 += 1;
+          console.log(izv_second_counter1);
+          if ($("#handle_box1").hasClass("buttom_rotate_30")) {
+            $("#handle_box1").removeClass("buttom_rotate_30");
+          }
+          if ($("#handle_box1").hasClass("buttom_rotate30")) {
+            $("#handle_box1").removeClass("buttom_rotate30");
+          }
+          $("#handle_box1").addClass("buttom_rotate_0");
+        }
+        if (izv_second_counter1 == 5) {
+          izv_second_counter1 = 1;
+        }
+      });
     });
 
 
@@ -280,7 +654,7 @@
             <div class="activity">
               <p id="activity_text">АКТИВНОСТЬ</p>
               <div class="activeline"></div>
-              
+
 
               <p id="point1">0</p>
               <p id="point2">100</p>
@@ -298,13 +672,21 @@
 
           </div>
           <div class="second">
-            <div class="buttom" id="buttom1">
+            <div class="izv_second2"></div>
+            <div class="izv_second1"></div>
+            <div class="buttom buttom1">
               <img src="images/buttom_body.svg" alt="" id="buttom_body">
-              <img src="images/buttom_handle.svg" alt="" id="buttom_handle">
+              <div class="handle_box" id="handle_box1">
+                <img src="images/buttom_handle.svg" alt="" id="buttom_handle" >
+                <img src="images/buttom_handle_hover.svg" alt="" class="buttom_handle1 opacity100" id="buttom_handle">
+              </div>
             </div>
-            <div class="buttom" id="buttom2">
+            <div class="buttom buttom2" >
               <img src="images/buttom_body.svg" alt="" id="buttom_body">
-              <img src="images/buttom_handle.svg" alt="" id="buttom_handle">
+              <div class="handle_box" id="handle_box2">
+                <img src="images/buttom_handle.svg" alt="" id="buttom_handle">
+                <img src="images/buttom_handle_hover.svg" alt="" class="buttom_handle2 opacity100" id="buttom_handle">
+              </div>
             </div>
             <div class="colorblock">
               <img src="images/color_mode.svg" alt="" id="color_mode">
