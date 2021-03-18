@@ -1,0 +1,116 @@
+.buttom {
+  position: absolute;
+  width: 5.76%;
+  height: 8.47%;
+  /* background: red; */
+}
+#buttom_body {
+  position: absolute;
+  width: 100%;
+}
+#buttom1 {
+  left: 14.8%;
+  top: 6%;
+}
+#buttom_handle {
+  position: absolute;
+  width: 34%;
+  bottom: 0;
+  left: calc(50% - 14px);
+}
+#buttom2 {
+  right: 7.6%;
+  top: 29%;
+  transform: rotate(30deg);
+}
+.colorblock {
+  position: absolute;
+  right: 10.4%;
+  bottom: 17%;
+  width: 25.56%;
+  height: 16.3%;
+  background: green;
+}
+#color_mode {
+  position: absolute;
+  width: 100%;
+}
+#color_text {
+  position: absolute;
+  font-size: 30px;
+  color:#A4DDD4;
+  top: 15%;
+  left: calc(50% - 128px);
+}
+.color_round {
+  position: absolute;
+  width: 21.2%;
+  height: 42.9%;
+  bottom: 13%;
+  border-radius: 50%;
+}
+#color1 {
+  background: #A4DDD4;
+  left: 7.5%;
+}
+#color2 {
+  background: #F28EC0;
+  left: calc(50% - 39px);
+}
+#color3 {
+  background: #F8E436;
+  right: 7.5%;
+}
+.blurblock {
+  position: absolute;
+  width: 20.7%;
+  height: 4%;
+  bottom: 10%;
+  right: 15%;
+  /* background: green; */
+}
+.blur_title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 51%;
+  height: 81%;
+  background: #A4DDD4;
+  border-radius: 20px;
+  border: 4px solid #71B4A9;
+}
+#blur_text {
+  position: absolute;
+  font-size: 30px;
+  color: black;
+  top: calc(50% - 15px);
+  left: calc(50% - 61px);
+}
+.blur_bottom {
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  /* background: red; */
+}
+#bottom_minus {
+  right: 18.4%;
+}
+#bottom_plus {
+  right: 0%;
+}
+#blur_buttom_img {
+  position: absolute;
+  width: 100%;
+}
+.blur_bottom_text {
+  position: absolute;
+  width: 40%;
+  height: 6%;
+  background: black;
+  border-radius: 2px;
+  top: calc(50% - 3.5px);
+  left: calc(50% - 9px);
+}
+#blur_bottom_text2 {
+  transform: rotate(90deg);
+}
