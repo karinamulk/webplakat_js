@@ -1,25 +1,31 @@
 .buttom {
   position: absolute;
-  width: 6.6%;
+  width: 5.76%;
   height: 8.47%;
   /* background: red; */
 }
 #buttom_body {
   position: absolute;
-  width: 87.37%;
-  left: 6.3%;
+  width: 100%;
 }
 .buttom1 {
   left: 14.8%;
   top: 6%;
-  transform: rotate(-30deg);
-}
 
+}
+.handle_box {
+  position: absolute;
+  width: 34%;
+  bottom: 0;
+  height: 141%;
+  left: calc(50% - 14px);
+    transform: rotate(-30deg);
+}
 #buttom_handle {
   position: absolute;
-  width: 29.79%;
+  width: 100%;
   bottom: 0;
-  left: 36%;
+  left: 0;
 
 }
 .opacity100 {
@@ -31,7 +37,6 @@
 .buttom2 {
   right: 7.6%;
   top: 29%;
-  transform: rotate(-30deg);
 
 }
 .colorblock {
@@ -40,7 +45,7 @@
   bottom: 17%;
   width: 25.56%;
   height: 16.3%;
-  /* background: green; */
+  background: green;
 }
 #color_mode {
   position: absolute;
