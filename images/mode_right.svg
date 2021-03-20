@@ -1,13 +1,5 @@
-<svg width="126" height="68" viewBox="0 0 126 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.216797" y="2.13867" width="125.502" height="65.6034" rx="20" fill="#71B4A9"/>
-<rect x="2.11914" y="0.757812" width="120.657" height="59.3705" rx="20" fill="#A4DDD4"/>
-<rect x="10.6758" y="3.08984" width="104.585" height="22.8186" rx="11.4093" fill="#A4DDD4"/>
-<rect x="10.6758" y="3.08984" width="104.585" height="22.8186" rx="11.4093" fill="url(#paint0_linear)"/>
-<path d="M78.2988 31.9054C79.6322 31.1356 79.6322 29.2111 78.2988 28.4413L56.0267 15.5825C54.6933 14.8127 53.0267 15.775 53.0267 17.3146L53.0267 43.0322C53.0267 44.5718 54.6933 45.5341 56.0267 44.7643L78.2988 31.9054Z" fill="black"/>
-<defs>
-<linearGradient id="paint0_linear" x1="62.9683" y1="3.08984" x2="62.9683" y2="25.9084" gradientUnits="userSpaceOnUse">
-<stop stop-color="white" stop-opacity="0.2"/>
-<stop offset="1" stop-color="white" stop-opacity="0"/>
-</linearGradient>
-</defs>
+<svg width="127" height="68" viewBox="0 0 127 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.886719" y="2.12305" width="125.502" height="65.6034" rx="20" fill="#71B4A9"/>
+<rect x="2.78906" y="0.742188" width="120.657" height="59.3705" rx="20" fill="#A4DDD4"/>
+<path d="M78.9688 31.8898C80.3021 31.12 80.3021 29.1955 78.9688 28.4257L56.6966 15.5669C55.3633 14.7971 53.6966 15.7593 53.6966 17.2989L53.6966 43.0166C53.6966 44.5562 55.3633 45.5184 56.6966 44.7486L78.9688 31.8898Z" fill="black"/>
 </svg>
