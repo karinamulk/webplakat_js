@@ -19,7 +19,7 @@
         left: 0;
         top: 0;
         right: 0;
-        /* background: url( 'images/MacBook Pro - 15.jpg'); */
+        background: url( 'images/MacBook Pro - 15.jpg');
         width: 100%;
         height: 100%;
         background-size: 100% auto ;
@@ -47,7 +47,7 @@
         position: absolute;
         top: 0; bottom: 0; left: 0; right: 0;
         padding: 0;
-        /* opacity: 50%; */
+        opacity: 50%;
         overflow: hidden;
         /* background: yellow; */
       }
@@ -81,7 +81,7 @@
         color:#F28EC0;
       }
       #name1 {
-        top: 44.3%;
+        top: 44.05%;
         right: 17%
       }
       #name2 {
@@ -90,7 +90,7 @@
       }
 
       #name3 {
-        bottom: 30.5%;
+        bottom: 30.3%;
         left: 7.5%;
       }
 
@@ -629,6 +629,16 @@
           izv_second_counter1 = 1;
         }
       });
+
+      $("#keyboard5").click(function(){
+        setTimeout(function(){
+          $("#line_text_saved").css("opacity", "100%");
+          $("#line_text_unsaved").css("opacity", "0%");
+          $("#line_text2").css("left", "62.9%");
+        }, 300);
+      });
+
+
     });
 
 
@@ -643,19 +653,19 @@
             <div class="izv1"></div>
             <div class="izv2"></div>
             <div class="think_counter">
-              <img src="images/think_counter.svg" alt="" id="think_counter_image">
+              <div class="think_counter_image" id="think_counter_image_shadow"></div>
+              <div class="think_counter_image" id="think_counter_image1"></div>
               <p id="think_counter1">мысли</p>
               <p class="think_counter_result" id="think_counter_result1">0</p>
               <p class="think_counter_result" id="think_counter_result2">0</p>
               <p class="think_counter_result" id="think_counter_result3">0</p>
               <p class="think_counter_result" id="think_counter_result4">0</p>
-
             </div>
             <div class="activity">
               <p id="activity_text">АКТИВНОСТЬ</p>
-              <div class="activeline"></div>
-
-
+              <div class="activeline">
+                <div class="active_point"></div>
+              </div>
               <p id="point1">0</p>
               <p id="point2">100</p>
             </div>
@@ -666,8 +676,18 @@
               <div class="mode_screen">
                 <p id="mode_text">СЕРЬЁЗНЫЙ</p>
               </div>
-              <img src="images/mode_left.svg" alt="" id="mode_left">
-              <img src="images/mode_right.svg" alt="" id="mode_right">
+              <div class="mode_buttom" id="mode_buttom_left">
+                <div class="mode_buttom_shadow" id="mbl_shadow"></div>
+                <div class="mode_buttom_base" id="mbl_base">
+                  <img src="images/mode_triangle.svg" alt="" id="mode_triangle1">
+                </div>
+              </div>
+              <div class="mode_buttom" id="mode_buttom_right">
+                <div class="mode_buttom_shadow" id="mbr_shadow"></div>
+                <div class="mode_buttom_base" id="mbr_base">
+                  <img src="images/mode_triangle.svg" alt="" id="mode_triangle2">
+                </div>
+              </div>
             </div>
 
           </div>
@@ -689,7 +709,8 @@
               </div>
             </div>
             <div class="colorblock">
-              <img src="images/color_mode.svg" alt="" id="color_mode">
+              <div class="color_mode" id="color_mode_shadow"></div>
+              <div class="color_mode" id="color_mode_base"></div>
               <p id="color_text">восприятие цвета</p>
               <div class="color_round" id="color1"></div>
               <div class="color_round" id="color2"></div>
@@ -701,11 +722,13 @@
                 <p id="blur_text">чёткость</p>
               </div>
               <div class="blur_bottom" id="bottom_minus">
-                <img src="images/blur_buttom.svg" alt="" id="blur_buttom_img">
+                <div class="blur_buttom_shadow" id="bbs_left"></div>
+                <div class="blur_buttom_base" id="bbb_left"></div>
                 <div class="blur_bottom_text"></div>
               </div>
               <div class="blur_bottom" id="bottom_plus">
-                <img src="images/blur_buttom.svg" alt="" id="blur_buttom_img">
+                <div class="blur_buttom_shadow" id="bbs_right"></div>
+                <div class="blur_buttom_base" id="bbb_right"></div>
                 <div class="blur_bottom_text"></div>
                 <div class="blur_bottom_text" id="blur_bottom_text2"></div>
               </div>
@@ -716,6 +739,7 @@
             </svg>
           </div>
           <div class="third">
+            <div class="izv_third1"></div>
             <div class="keyboard" id="keyboard1">
               <p class="keyboard_text" id="keyboard_S">S</p>
               <p class="keyboard_text" id="keyboard_Y">Ы</p>
@@ -728,19 +752,19 @@
               <p class="keyboard_text" id="keyboard_ALT">ALT</p>
             </div>
             <div class="keyboard" id="keyboard5">
-              <img src="images/save_buttom.svg" alt="" id="keyboard_img">
+              <div class="keyboard_save_shadow"></div>
+              <div class="keyboard_save_body"></div>
               <p class="keyboard_text" id="keyboard_SAVE">SAVE</p>
             </div>
-            <div class="light_triangle">
-              <img src="images/triangle.svg" alt="" id="triangle_mask">
-            </div>
+            <div class="light_triangle"></div>
             <div class="light_cross">
               <div class="cross" id="cross1"></div>
               <div class="cross" id="cross2"></div>
             </div>
             <div class="light_round"></div>
             <div class="line">
-              <p id="line_text">требуется сохранить изменения</p>
+              <p class="line_text" id="line_text_unsaved">требуется сохранить изменения</p>
+              <p class="line_text" id="line_text_saved">изменения сохранены</p>
               <p id="line_text2">_</p>
             </div>
             <div class="bottom_bar">
