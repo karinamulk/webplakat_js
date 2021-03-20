@@ -47,9 +47,21 @@
   height: 16.3%;
   /* background: green; */
 }
-#color_mode {
+.color_mode {
   position: absolute;
   width: 100%;
+  border-radius: 20px;
+  height: 100%;
+  box-sizing: border-box;
+}
+#color_mode_base {
+  border: 5px solid #A4DDD4;
+  background-color: black;
+}
+#color_mode_shadow {
+  border: 5px solid #71B4A9;
+  background-color: black;
+  bottom: -2%;
 }
 #color_text {
   position: absolute;
@@ -114,9 +126,42 @@
 #bottom_plus {
   right: 0%;
 }
-#blur_buttom_img {
+.blur_buttom_base {
   position: absolute;
-  width: 100%;
+  width: 90%;
+  height: 90%;
+  background-color: #A4DDD4;
+  bottom: 10%;
+  left: 5%;
+  border-radius: 50%;
+  transition: all .3s;
+}
+.blur_buttom_shadow {
+  position: absolute;
+  width: 92%;
+  height: 96%;
+  left: 4.5%;
+  bottom: 0;
+  background-color: #71B4A9;
+  border-radius: 50%;
+  transition: all .3s;
+
+}
+#bottom_minus:hover #bbs_left {
+  background-color: #DD7BAC;
+  transition: all 0s;
+}
+#bottom_minus:hover #bbb_left {
+  background-color: #F28EC0;
+  transition: all 0s;
+}
+#bottom_plus:hover #bbs_right {
+  background-color: #DD7BAC;
+  transition: all 0s;
+}
+#bottom_plus:hover #bbb_right {
+  background-color: #F28EC0;
+  transition: all 0s;
 }
 .blur_bottom_text {
   position: absolute;
