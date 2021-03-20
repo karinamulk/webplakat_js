@@ -1,3 +1,13 @@
+.izv_third1 {
+  position: absolute;
+  width: 100.01%;
+  height: 77.14%;
+  top: -5%;
+  background: url( '../images/third1.svg');
+  background-size: 2000% 100.3%;
+  background-position: -0 top;
+  animation: izv1 1s steps(1) alternate infinite;
+}
 .keyboard {
   position: absolute;
   width: 8.33%;
@@ -25,13 +35,33 @@
   right: 31.2%;
 }
 #keyboard5 {
-  width: 17.22%;
+  width: 16.82%;
   top: 41.5%;
-  left: 29.5%;
+  left: 29.9%;
   background: none;
 }
-#keyboard_img {
+.keyboard_save_body, .keyboard_save_shadow {
+  position: absolute;
   width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition: all .3s;
+
+}
+.keyboard_save_body {
+  background-color: #A4DDD4;
+}
+.keyboard_save_shadow {
+  background-color: #71B4A9;
+  bottom: -10%;
+}
+#keyboard5:hover .keyboard_save_body{
+  background-color: #F28EC0;
+  transition: all 0s;
+}
+#keyboard5:hover .keyboard_save_shadow{
+  background-color: #DD7BAC;
+  transition: all 0s;
 }
 #keyboard3 {
   top: 41.5%;
@@ -55,17 +85,7 @@
 #keyboard_SAVE {
   left: calc(50% - 47px);
 }
-/* .vision_mask {
-  mask-type: alpha;
-  width: 55.56%;
-  height: 68.07%;
-  -webkit-mask: url("https://karinamulk.github.io/homework-NewYear2021/images/vision.svg");
-  background-color: #F28EC0;
-  position: absolute;
-  left: 0;
-  top: 25%;
-  transition: all .5s;
-} */
+
 .light_cross {
   position: absolute;
   /* background: blue; */
@@ -81,6 +101,7 @@
   background: #A4DDD4;
   border-radius: 10px;
   left: calc(50% - 11px);
+  animation: light3 2s steps(1) infinite;
 }
 #cross1 {
   transform: rotate(-45deg);
@@ -96,10 +117,9 @@
   right: 8.25%;
   top: 56.9%;
   border-radius: 50%;
+  animation: light1 2s steps(1) infinite;
 }
-/* #test {
-  display: none;
-} */
+
 #triangle_mask {
   display: none;
 }
@@ -108,10 +128,26 @@
   width: 5%;
   height: 8.35%;
   -webkit-mask: url("https://karinamulk.github.io/webplakat_js/images/triangle.svg");
-  background-color: #F8E436;
+  background: #F8E436;
   position: absolute;
   right: 8.5%;
   top: 16.6%;
+  animation: light2 2s steps(1) infinite;
+}
+@keyframes light2 {
+  0% {background: #F28EC0;}
+  33% {background: #A4DDD4;}
+  66% {background: #F8E436;}
+}
+@keyframes light1 {
+  0% {background: #A4DDD4;}
+  33% {background: #F8E436;}
+  66% {background: #F28EC0;}
+}
+@keyframes light3 {
+  0% {background: #F8E436;}
+  33% {background: #F28EC0;}
+  66% {background: #A4DDD4;}
 }
 .line {
   position: absolute;
@@ -120,17 +156,30 @@
   bottom: 17.6%;
   background-color: #F28EC0;
 }
-#line_text {
+.line_text {
   font-size: 30px;
   position: absolute;
   top: calc(50% - 15px);
-  left: calc(50% - 231px)
+}
+#line_text_unsaved {
+  left: calc(50% - 245px);
+}
+#line_text_saved {
+  left: calc(50% - 157px);
+  opacity: 0;
+  transition: all .1s;
+
 }
 #line_text2 {
   font-size: 30px;
   position: absolute;
   top: calc(50% - 17px);
-  right: 32.8%;
+  left: 67.4%;
+  animation: text_opacity 1s steps(2) infinite;
+}
+@keyframes text_opacity {
+  0% {opacity: 0%};
+  100% {opacity: 100%};
 }
 .bottom_bar {
   position: absolute;
