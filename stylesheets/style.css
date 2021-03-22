@@ -2,6 +2,7 @@
 @import "first.css";
 @import "second.css";
 @import "third.css";
+@import "thinks.css";
 @font-face {
 font-family: 'Pragmatica';
 src: url("../fonts/PRG65.otf");
