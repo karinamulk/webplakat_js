@@ -19,7 +19,8 @@
   bottom: 0;
   height: 141%;
   left: calc(50% - 14px);
-    transform: rotate(-30deg);
+  transform: rotate(-30deg);
+  transition: .2s;
 }
 #buttom_handle {
   position: absolute;
@@ -30,9 +31,11 @@
 }
 .opacity100 {
   opacity: 0%;
+  transition: .2s;
 }
 .opacity100:hover {
   opacity: 100%;
+  transition: .1s
 }
 .buttom2 {
   right: 7.6%;
@@ -174,4 +177,7 @@
 }
 #blur_bottom_text2 {
   transform: rotate(90deg);
+}
+.izv_vision {
+  transition: .3s;
 }
