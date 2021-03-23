@@ -674,60 +674,46 @@
       ]
       console.log(serious[1])
 
-      let mode_click = 1;
       $("#mode_buttom_left").click(function(){
-        mode_click = 0;
-        $("#mode_text").html("ЛАЙТОВЫЙ");
+        $("#mode_text").text("ЛАЙТОВЫЙ");
         $("#mode_text").css("left", "calc(50% - 106px)");
-        console.log(mode_click)
-        $("#think1_text").html(lite[0]);
-        $("#think2_text").html(lite[1]);
-        $("#think3_text").html(lite[2]);
-        $("#think4_text").html(lite[3]);
+        $("#think1_text").text(lite[0]);
+        $("#think2_text").text(lite[1]);
+        $("#think3_text").text(lite[2]);
+        $("#think4_text").text(lite[3]);
+        $(".think").css("display", "block");
+        $(".think").css("opacity", "100");
       });
       $("#mode_buttom_right").click(function(){
-        mode_click = 1;
-        $("#mode_text").html("СЕРЬЁЗНЫЙ");
+        $("#mode_text").text("СЕРЬЁЗНЫЙ");
         $("#mode_text").css("left", "calc(50% - 112px)");
-        console.log(mode_click)
-        $("#think1_text").html(serious[0]);
-        $("#think2_text").html(serious[1]);
-        $("#think3_text").html(serious[2]);
-        $("#think4_text").html(serious[3]);
+
+        $("#think1_text").text(serious[0]);
+        $("#think2_text").text(serious[1]);
+        $("#think3_text").text(serious[2]);
+        $("#think4_text").text(serious[3]);
+        $(".think").css("display", "block");
+        $(".think").css("opacity", "100");
       });
 
-
-      $("#skip1").click(function(){
-        $("#think1").addClass("skip_animation");
-        setTimeout(function(){
-          $("#think1").css("display", "none");
-        }, 500);
-      });
-
-      $("#skip2").click(function(){
-        $("#think2").css("opacity", "0");
-        setTimeout(function(){
-          $("#think2").css("display", "none");
-        }, 500);
-      });
-
-      $("#skip3").click(function(){
-        $("#think3").css("opacity", "0");
-        setTimeout(function(){
-          $("#think3").css("display", "none");
-        }, 500);
-      });
-
-      $("#skip4").click(function(){
-        $("#think4").css("opacity", "0");
-        setTimeout(function(){
-          $("#think4").css("display", "none");
-        }, 500);
-      });
-
-      $(".skip_buttom").hover(function(){
+      $(".skip_buttom").mouseover(function(e){
+        $(this).parent().css('transition', '0.1s');
         $(this).parent().css('background-color', '#A4DDD4');
       });
+      $(".skip_buttom").mouseleave(function(e){
+        $(this).parent().css('transition', '0.3s');
+        $(this).parent().css('background-color', 'black');
+      });
+
+
+      $(".skip_buttom").click(function(){
+        $(this).parent().css("transition", ".3s");
+        $(this).parent().css("opacity", "0");
+        setTimeout(function(){
+          $(this).parent().css("display", "none");
+        }, 500);
+      });
+
     });
 
 
@@ -778,23 +764,23 @@
               </div>
             </div>
             <div class="think" id="think1">
-              <img src="images/krest_hover.svg" alt="" class="skip_buttom" id="skip1-1">
-              <img src="images/krest.svg" alt="" class="skip_buttom" id="skip1">
+              <img src="images/krest_hover.svg" alt="" class="skip_buttom">
+              <img src="images/krest.svg" alt="" class="skip_buttom">
               <h1 id="think1_text">надо купить машину</h1>
             </div>
             <div class="think" id="think2">
-              <img src="images/krest_hover.svg" alt="" class="skip_buttom" id="skip2-1">
-              <img src="images/krest.svg" alt="" class="skip_buttom" id="skip2">
+              <img src="images/krest_hover.svg" alt="" class="skip_buttom" >
+              <img src="images/krest.svg" alt="" class="skip_buttom">
               <h1 id="think2_text">100+20×6=???</h1>
             </div>
             <div class="think" id="think3">
-              <img src="images/krest_hover.svg" alt="" class="skip_buttom" id="skip3-1">
-              <img src="images/krest.svg" alt="" class="skip_buttom" id="skip3">
+              <img src="images/krest_hover.svg" alt="" class="skip_buttom">
+              <img src="images/krest.svg" alt="" class="skip_buttom">
               <h1 id="think3_text">нашла решение по проекту!</h1>
             </div>
             <div class="think" id="think4">
-              <img src="images/krest_hover.svg" alt="" class="skip_buttom" id="skip4-1">
-              <img src="images/krest.svg" alt="" class="skip_buttom" id="skip4">
+              <img src="images/krest_hover.svg" alt="" class="skip_buttom">
+              <img src="images/krest.svg" alt="" class="skip_buttom">
               <h1 id="think4_text">завтра платить за ипотеку</h1>
             </div>
           </div>
