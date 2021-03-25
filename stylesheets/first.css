@@ -1,3 +1,66 @@
+.izv1 {
+  position: absolute;
+  right: -2.78%;
+  top: 0%;
+  width: 52.78%;
+  height: 67.93%;
+  background-color: blue;
+  background: url( '../images/first1.svg');
+  background-size: 2000% 100% ;
+  background-position: -0 top;
+  animation: izv1 1s steps(1) alternate infinite;
+}
+.names {
+  position: absolute;
+  font-size: 30px;
+  color:#F28EC0;
+}
+#name1 {
+  top: 44.05%;
+  right: 17%
+}
+#name2 {
+  bottom: 40.7%;
+  left: 27.7%;
+}
+
+#name3 {
+  bottom: 30.3%;
+  left: 7.5%;
+}
+@keyframes izv1 {
+  0% {background-position: 0 top;}
+  5% {background-position: -100% top;}
+  10% {background-position: -200% top;}
+  15% {background-position: -300% top;}
+  20% {background-position: -400% top;}
+  25% {background-position: -500% top;}
+  30% {background-position: -600% top;}
+  35% {background-position: -700% top;}
+  40% {background-position: -800% top;}
+  45% {background-position: -900% top;}
+  50% {background-position: -1000% top;}
+  55% {background-position: -1100% top;}
+  60% {background-position: -1200% top;}
+  65% {background-position: -1300% top;}
+  70% {background-position: -1400% top;}
+  75% {background-position: -1500% top;}
+  80% {background-position: -1600% top;}
+  85% {background-position: -1700% top;}
+  90% {background-position: -1800% top;}
+  95% {background-position: -1900% top;}
+}
+.izv2 {
+  position: absolute;
+  right: -2.78%;
+  top: 0%;
+  width: 102.56%;
+  height: 100%;
+  background: url( '../images/first2.svg');
+  background-size: 2000% 100% ;
+  background-position: -0 top;
+  animation: izv1 1s steps(1) alternate infinite;
+}
 .think_counter {
   position: absolute;
   width: 22.3%;
@@ -35,6 +98,7 @@ border: 5px solid #71B4A9;
   font-size: 90px;
   color: #A4DDD4;
   bottom: 15%;
+  opacity: 0;
 }
 #think_counter_result1 {
   left: 16.4%;
