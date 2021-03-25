@@ -19,7 +19,7 @@
         left: 0;
         top: 0;
         right: 0;
-        background: url( 'images/MacBook Pro - 15.jpg');
+        /* background: url( 'images/MacBook Pro - 18.jpg'); */
         width: 100%;
         height: 100%;
         background-size: 100% auto ;
@@ -49,6 +49,7 @@
         padding: 0;
         opacity: 50%;
         overflow: hidden;
+        transition: all .3s;
         /* background: yellow; */
       }
       .first {
@@ -62,6 +63,7 @@
         width: 100%;
         height: 37.1%;
         /* background: blue; */
+        /* opacity: 50%; */
       }
       .third {
         position: relative;
@@ -73,134 +75,8 @@
       p {
         font-family: "Pragmatica";
       }
-
-
-      .names {
-        position: absolute;
-        font-size: 30px;
-        color:#F28EC0;
-      }
-      #name1 {
-        top: 44.05%;
-        right: 17%
-      }
-      #name2 {
-        bottom: 40.7%;
-        left: 27.7%;
-      }
-
-      #name3 {
-        bottom: 30.3%;
-        left: 7.5%;
-      }
-
-
-
-
-      .izv1 {
-        position: absolute;
-        right: -2.78%;
-        top: 0%;
-        width: 52.78%;
-        height: 67.93%;
-        background-color: blue;
-        background: url( 'images/first1.svg');
-        background-size: 2000% 100% ;
-        background-position: -0 top;
-        animation: izv1 1s steps(1) alternate infinite;
-      }
-      @keyframes izv1 {
-        0% {background-position: 0 top;}
-        5% {background-position: -100% top;}
-        10% {background-position: -200% top;}
-        15% {background-position: -300% top;}
-        20% {background-position: -400% top;}
-        25% {background-position: -500% top;}
-        30% {background-position: -600% top;}
-        35% {background-position: -700% top;}
-        40% {background-position: -800% top;}
-        45% {background-position: -900% top;}
-        50% {background-position: -1000% top;}
-        55% {background-position: -1100% top;}
-        60% {background-position: -1200% top;}
-        65% {background-position: -1300% top;}
-        70% {background-position: -1400% top;}
-        75% {background-position: -1500% top;}
-        80% {background-position: -1600% top;}
-        85% {background-position: -1700% top;}
-        90% {background-position: -1800% top;}
-        95% {background-position: -1900% top;}
-      }
-      .izv2 {
-        position: absolute;
-        right: -2.78%;
-        top: 0%;
-        width: 102.56%;
-        height: 100%;
-        background: url( 'images/first2.svg');
-        background-size: 2000% 100% ;
-        background-position: -0 top;
-        animation: izv1 1s steps(1) alternate infinite;
-      }
-
-
-      .izv_vision  {
-        position: absolute;
-        width: 63.5%;
-        bottom: 7.16%;
-        left: -8%;
-        filter: blur(4px);
-      }
-
-      .vision_color1 path {
-        fill: #A4DDD4;
-        transition: all .2s;
-      }
-      .vision_color2 path {
-        fill: #F28EC0;
-        transition: all .2s;
-
-      }
-      .vision_color3 path {
-        fill: #F8E436;
-        transition: all .2s;
-
-      }
-      .blocker {
-        display: none;
-      }
-      .izv_second2 {
-        position: absolute;
-        top: -10%;
-        right: 0%;
-        width: 52.78%;
-        height: 84.44%;
-        background: url( 'images/izv_mode1.svg');
-        background-size: 2000% 100%;
-        background-position: -0 top;
-      }
-      .izv_second1 {
-        position: absolute;
-        top: -40%;
-        left: 0.04%;
-        width: 50%;
-        height: 80.11%;
-        background: url( 'images/izv_mode2.svg');
-        background-size: 2000% 100%;
-        background-position: -0 top;
-      }
-      .buttom_rotate_30 {
-        transform: rotate(-30deg);
-      }
-      .buttom_rotate_0 {
-        transform: rotate(0deg);
-      }
-      .buttom_rotate30 {
-        transform: rotate(30deg);
-      }
-      .skip_animation {
-        opacity: 0%;
-        transition: 1s;
+      .stop {
+        animation-play-state: paused;
       }
     </style>
     <script type="text/javascript">
@@ -634,53 +510,64 @@
         setTimeout(function(){
           $("#line_text_saved").css("opacity", "100%");
           $("#line_text_unsaved").css("opacity", "0%");
-          $("#line_text2").css("left", "62.9%");
+          $(".line_text2").css("left", "62.9%");
         }, 300);
       });
 
       let serious = [
-        "надо купить машину",
+        "надо&nbspкупить&nbspмашину",
         "100+20×6=???",
-        "нашла решение по проекту!",
-        "завтра платить за ипотеку",
-        "пора выпить таблетки",
-        "может уволиться...",
-        "ну на 500 р неделю проживу",
-        "мама просила полить цветы",
-        "меня отчислят скоро, наверное",
-        "дома хлеб кончился вроде",
-        "надо пораньше лечь спать",
-        "блин, из банка опять звонят",
-        "вечером созвон с заказчиком",
-        "запишу, пока не забыла",
-        "а сколько соли надо в суп?"
+        "нашла&nbspрешение&nbspпо&nbspпроекту!",
+        "завтра&nbspплатить&nbspза&nbspипотеку",
+        "пора&nbspвыпить&nbspтаблетки",
+        "может&nbspуволиться...",
+        "ну&nbspна&nbsp500&nbspр&nbspнеделю&nbspпроживу",
+        "мама&nbspпросила&nbspполить&nbspцветы",
+        "меня&nbspотчислят&nbspскоро",
+        "дома&nbspхлеб&nbspкончился&nbspвроде",
+        "надо&nbspпораньше&nbspлечь&nbspспать",
+        "блин,&nbspиз&nbspбанка&nbspопять&nbspзвонят",
+        "вечером&nbspсозвон&nbspс&nbspзаказчиком",
+        "запишу,&nbspпока&nbspне&nbspзабыла",
+        "а&nbspсколько&nbspсоли&nbspнадо&nbspв&nbspсуп?"
       ]
       let lite = [
-        "как бесит Вася...",
-        "посмотрю–ка часок аниме",
-        "мало половин, мало, мало половин",
-        "может за пивом сходить?",
-        "урааа выходной",
-        "какая красивая собака ",
-        "опять час в тиктоке залипала",
-        "Егорка краш))))",
-        "уф, я растолстела",
-        "почему он не пишет мне?!",
-        "на неделе в ТЦ схожу",
-        "почему Стим не грузится?",
-        "о, классная фотка",
-        "закажу роллы на вечер",
-        "пойду спать"
+        "как&nbspбесит&nbspВася...",
+        "посмотрю&nbspчасок&nbspаниме",
+        "мало&nbspполовин,&nbspмало,&nbspмало&nbspполовин",
+        "может&nbspза&nbspпивом&nbspсходить?",
+        "урааа&nbspвыходной",
+        "какая&nbspкрасивая&nbspсобака ",
+        "опять&nbspчас&nbspв&nbspтиктоке&nbspзалипала",
+        "Егорка&nbspкраш))))",
+        "уф,&nbspя&nbspрастолстела",
+        "почему&nbspон&nbspне&nbspпишет&nbspмне?!",
+        "на&nbspнеделе&nbspв&nbspТЦ&nbspсхожу",
+        "почему&nbspСтим&nbspне&nbspгрузится?",
+        "о,&nbspклассная&nbspфотка",
+        "закажу&nbspроллы&nbspна&nbspвечер",
+        "пойду&nbspспать"
       ]
       console.log(serious[1])
 
       $("#mode_buttom_left").click(function(){
         $("#mode_text").text("ЛАЙТОВЫЙ");
         $("#mode_text").css("left", "calc(50% - 106px)");
-        $("#think1_text").text(lite[0]);
-        $("#think2_text").text(lite[1]);
-        $("#think3_text").text(lite[2]);
-        $("#think4_text").text(lite[3]);
+        $("#think1_text").html(lite[0]);
+        $("#think2_text").html(lite[1]);
+        $("#think3_text").html(lite[2]);
+        $("#think4_text").html(lite[3]);
+        $("#think5_text").html(lite[4]);
+        $("#think6_text").html(lite[5]);
+        $("#think7_text").html(lite[6]);
+        $("#think8_text").html(lite[7]);
+        $("#think9_text").html(lite[8]);
+        $("#think10_text").html(lite[9]);
+        $("#think11_text").html(lite[10]);
+        $("#think12_text").html(lite[11]);
+        $("#think13_text").html(lite[12]);
+        $("#think14_text").html(lite[13]);
+        $("#think15_text").html(lite[14]);
         $(".think").css("display", "block");
         $(".think").css("opacity", "100");
       });
@@ -688,10 +575,21 @@
         $("#mode_text").text("СЕРЬЁЗНЫЙ");
         $("#mode_text").css("left", "calc(50% - 112px)");
 
-        $("#think1_text").text(serious[0]);
-        $("#think2_text").text(serious[1]);
-        $("#think3_text").text(serious[2]);
-        $("#think4_text").text(serious[3]);
+        $("#think1_text").html(serious[0]);
+        $("#think2_text").html(serious[1]);
+        $("#think3_text").html(serious[2]);
+        $("#think4_text").html(serious[3]);
+        $("#think5_text").html(serious[4]);
+        $("#think6_text").html(serious[5]);
+        $("#think7_text").html(serious[6]);
+        $("#think8_text").html(serious[7]);
+        $("#think9_text").html(serious[8]);
+        $("#think10_text").html(serious[9]);
+        $("#think11_text").html(serious[10]);
+        $("#think12_text").html(serious[11]);
+        $("#think13_text").html(serious[12]);
+        $("#think14_text").html(serious[13]);
+        $("#think15_text").html(serious[14]);
         $(".think").css("display", "block");
         $(".think").css("opacity", "100");
       });
@@ -699,19 +597,46 @@
       $(".skip_buttom").mouseover(function(e){
         $(this).parent().css('transition', '0.1s');
         $(this).parent().css('background-color', '#A4DDD4');
+        $(this).parent().css('animation-play-state', 'paused');
+
       });
       $(".skip_buttom").mouseleave(function(e){
         $(this).parent().css('transition', '0.3s');
         $(this).parent().css('background-color', 'black');
+        $(this).parent().css('animation-play-state', 'running');
+
       });
-
-
       $(".skip_buttom").click(function(){
         $(this).parent().css("transition", ".3s");
         $(this).parent().css("opacity", "0");
         setTimeout(function(){
           $(this).parent().css("display", "none");
         }, 500);
+      });
+
+
+      $(".fp_buttom").click(function(){
+        $(".fp_bar_active").css("animation-play-state", "running");
+        setTimeout(function(){
+          $(".fp_bar").css("background", "#A4DDD4");
+        }, 3000);
+        setTimeout(function(){
+          $(".allpage").css("opacity", "0%");
+          $(".content").css("opacity", "100%");
+          $(".think_counter_result").css("opacity", "100%");
+          $(".think").css("display", "block");
+          $(".izv1").removeClass("stop");
+          $(".izv2").removeClass("stop");
+          $(".izv_third1").removeClass("stop");
+          $(".active_point").removeClass("stop");
+          $(".cross").removeClass("stop");
+          $(".light_triangle").removeClass("stop");
+          $(".light_round").removeClass("stop");
+          $(".line_text2").removeClass("stop");
+        }, 3100);
+        setTimeout(function(){
+          $(".allpage").css("display", "none");
+        }, 3400);
       });
 
     });
@@ -724,8 +649,8 @@
       <div class="sootnosheniye">
         <div class="content">
           <div class="first">
-            <div class="izv1"></div>
-            <div class="izv2"></div>
+            <div class="izv1 stop"></div>
+            <div class="izv2 stop"></div>
             <div class="think_counter">
               <div class="think_counter_image" id="think_counter_image_shadow"></div>
               <div class="think_counter_image" id="think_counter_image1"></div>
@@ -738,7 +663,7 @@
             <div class="activity">
               <p id="activity_text">АКТИВНОСТЬ</p>
               <div class="activeline">
-                <div class="active_point"></div>
+                <div class="active_point stop"></div>
               </div>
               <p id="point1">0</p>
               <p id="point2">100</p>
@@ -766,7 +691,7 @@
             <div class="think" id="think1">
               <img src="images/krest_hover.svg" alt="" class="skip_buttom">
               <img src="images/krest.svg" alt="" class="skip_buttom">
-              <h1 id="think1_text">надо купить машину</h1>
+              <h1 id="think1_text">надо&nbspкупить&nbspмашину</h1>
             </div>
             <div class="think" id="think2">
               <img src="images/krest_hover.svg" alt="" class="skip_buttom" >
@@ -776,12 +701,12 @@
             <div class="think" id="think3">
               <img src="images/krest_hover.svg" alt="" class="skip_buttom">
               <img src="images/krest.svg" alt="" class="skip_buttom">
-              <h1 id="think3_text">нашла решение по проекту!</h1>
+              <h1 id="think3_text">нашла&nbspрешение&nbspпо&nbspпроекту!</h1>
             </div>
             <div class="think" id="think4">
               <img src="images/krest_hover.svg" alt="" class="skip_buttom">
               <img src="images/krest.svg" alt="" class="skip_buttom">
-              <h1 id="think4_text">завтра платить за ипотеку</h1>
+              <h1 id="think4_text">завтра&nbspплатить&nbspза&nbspипотеку</h1>
             </div>
           </div>
           <div class="second">
@@ -830,9 +755,45 @@
             <svg width="921" height="761" viewBox="0 0 921 761" fill="none" xmlns="http://www.w3.org/2000/svg" class="izv_vision">
             <path d="M201.376 400.578H-4.19336V440.578H201.376C223.467 440.578 241.376 422.67 241.376 400.578V120.578H320.438V300.578C320.438 333.715 347.3 360.578 380.438 360.578C413.575 360.578 440.438 333.715 440.438 300.578V60.5781C440.438 49.5324 449.392 40.5781 460.438 40.5781C471.483 40.5781 480.438 49.5324 480.438 60.5781V400.578C480.438 422.67 498.346 440.578 520.438 440.578H680.437C702.529 440.578 720.437 422.669 720.437 400.578V200.578H880.437V620.578C880.437 631.624 871.483 640.578 860.437 640.578C849.392 640.578 840.437 631.624 840.437 620.578V580.578C840.437 547.441 813.574 520.578 780.437 520.578C747.3 520.578 720.437 547.441 720.437 580.578V720.578H360.438V640.578H580.437C613.574 640.578 640.437 613.715 640.437 580.578C640.437 547.441 613.574 520.578 580.437 520.578H-4.19336V560.578H580.437C591.483 560.578 600.437 569.532 600.437 580.578C600.437 591.624 591.483 600.578 580.437 600.578H360.438C338.346 600.578 320.438 618.487 320.438 640.578V720.578C320.438 742.669 338.346 760.578 360.438 760.578H720.437C742.529 760.578 760.437 742.669 760.437 720.578V580.578C760.437 569.532 769.392 560.578 780.437 560.578C791.483 560.578 800.437 569.532 800.437 580.578V620.578C800.437 653.715 827.3 680.578 860.437 680.578C893.574 680.578 920.437 653.715 920.437 620.578V200.578C920.437 178.487 902.529 160.578 880.437 160.578H720.437C698.346 160.578 680.437 178.487 680.437 200.578V400.578H520.437V60.578C520.437 27.441 493.574 0.578125 460.437 0.578125C427.3 0.578125 400.438 27.441 400.438 60.578V300.578C400.438 311.624 391.483 320.578 380.438 320.578C369.392 320.578 360.438 311.624 360.438 300.578V120.578C360.438 98.4867 342.529 80.5781 320.438 80.5781H241.376C219.284 80.5781 201.376 98.4867 201.376 120.578V400.578Z" fill="#F28EC0"/>
             </svg>
+            <div class="think" id="think5">
+              <img src="images/krest_hover.svg" alt="" class="skip_buttom">
+              <img src="images/krest.svg" alt="" class="skip_buttom">
+              <h1 id="think5_text">пора&nbspвыпить&nbspтаблетки</h1>
+            </div>
+            <div class="think" id="think6">
+              <img src="images/krest_hover.svg" alt="" class="skip_buttom">
+              <img src="images/krest.svg" alt="" class="skip_buttom">
+              <h1 id="think6_text">может&nbspуволиться...</h1>
+            </div>
+            <div class="think" id="think7">
+              <img src="images/krest_hover.svg" alt="" class="skip_buttom">
+              <img src="images/krest.svg" alt="" class="skip_buttom">
+              <h1 id="think7_text">ну&nbspна&nbsp500&nbspр&nbspнеделю&nbspпроживу</h1>
+            </div>
+            <div class="think" id="think8">
+              <img src="images/krest_hover.svg" alt="" class="skip_buttom">
+              <img src="images/krest.svg" alt="" class="skip_buttom">
+              <h1 id="think8_text">мама&nbspпросила&nbspполить&nbspцветы</h1>
+            </div>
+            <div class="think" id="think9">
+              <img src="images/krest_hover.svg" alt="" class="skip_buttom">
+              <img src="images/krest.svg" alt="" class="skip_buttom">
+              <h1 id="think9_text">меня&nbspотчислят&nbspскоро</h1>
+            </div>
+            <div class="think" id="think10">
+              <img src="images/krest_hover.svg" alt="" class="skip_buttom">
+              <img src="images/krest.svg" alt="" class="skip_buttom">
+              <h1 id="think10_text">дома&nbspхлеб&nbspкончился&nbspвроде</h1>
+            </div>
+            <div class="think" id="think11">
+              <img src="images/krest_hover.svg" alt="" class="skip_buttom">
+              <img src="images/krest.svg" alt="" class="skip_buttom">
+              <h1 id="think11_text">надо&nbspпораньше&nbspлечь&nbspспать</h1>
+            </div>
+
           </div>
           <div class="third">
-            <div class="izv_third1"></div>
+            <div class="izv_third1 stop"></div>
             <div class="keyboard" id="keyboard1">
               <p class="keyboard_text" id="keyboard_S">S</p>
               <p class="keyboard_text" id="keyboard_Y">Ы</p>
@@ -849,26 +810,69 @@
               <div class="keyboard_save_body"></div>
               <p class="keyboard_text" id="keyboard_SAVE">SAVE</p>
             </div>
-            <div class="light_triangle"></div>
+            <div class="light_triangle stop"></div>
             <div class="light_cross">
-              <div class="cross" id="cross1"></div>
-              <div class="cross" id="cross2"></div>
+              <div class="cross stop" id="cross1"></div>
+              <div class="cross stop" id="cross2"></div>
             </div>
-            <div class="light_round"></div>
+            <div class="light_round stop"></div>
             <div class="line">
               <p class="line_text" id="line_text_unsaved">требуется сохранить изменения</p>
               <p class="line_text" id="line_text_saved">изменения сохранены</p>
-              <p id="line_text2">_</p>
+              <p class="line_text2 stop">_</p>
+            </div>
+            <div class="think" id="think12">
+              <img src="images/krest_hover.svg" alt="" class="skip_buttom">
+              <img src="images/krest.svg" alt="" class="skip_buttom">
+              <h1 id="think12_text">блин,&nbspиз&nbspбанка&nbspопять&nbspзвонят</h1>
+            </div>
+            <div class="think" id="think13">
+              <img src="images/krest_hover.svg" alt="" class="skip_buttom">
+              <img src="images/krest.svg" alt="" class="skip_buttom">
+              <h1 id="think13_text">вечером&nbspсозвон&nbspс&nbspзаказчиком</h1>
+            </div>
+            <div class="think" id="think14">
+              <img src="images/krest_hover.svg" alt="" class="skip_buttom">
+              <img src="images/krest.svg" alt="" class="skip_buttom">
+              <h1 id="think14_text">запишу,&nbspпока&nbspне&nbspзабыла</h1>
+            </div>
+            <div class="think" id="think15">
+              <img src="images/krest_hover.svg" alt="" class="skip_buttom">
+              <img src="images/krest.svg" alt="" class="skip_buttom">
+              <h1 id="think15_text">а&nbspсколько&nbspсоли&nbspнадо&nbspв&nbspсуп?</h1>
             </div>
             <div class="bottom_bar">
               <p class="bar_text" id="bar_text1">HSE&nbspADC</p>
               <p class="bar_text">2021</p>
               <div class="bar_text" id="bar_text3"></div>
-              <a href="#" class="bar_text" id="bar_text4">@mulkamanova</a>
+              <a href="https://www.instagram.com/mulkamanova/" class="bar_text" id="bar_text4">@mulkamanova</a>
             </div>
           </div>
 
         </div>
+        <div class="allpage">
+          <div class="fp_bar"></div>
+          <div class="fp_bar_active"></div>
+          <img src="images/dobro.svg" alt="" class="firstpage_text" id="dobro">
+          <img src="images/pozhal.svg" alt="" class="firstpage_text" id="pozhal">
+          <img src="images/mozg.svg" alt="" class="firstpage_text" id="mozg">
+          <div class="firstpage_round" id="firstpage_round1" ></div>
+          <div class="firstpage_round" id="firstpage_round2" ></div>
+          <div class="firstpage_round" id="firstpage_round3" ></div>
+          <img src="images/fp1.svg" alt="" id="fp1">
+          <img src="images/fp2.svg" alt="" id="fp2">
+          <img src="images/fp3.svg" alt="" id="fp3">
+          <img src="images/fp4.svg" alt="" id="fp4">
+          <img src="images/fp5.svg" alt="" id="fp5">
+          <img src="images/fp6.svg" alt="" id="fp6">
+          <div class="fp_buttom">
+            <div class="fp_buttom_base">
+              <img src="images/fp_buttom.svg" alt="" id="fp_buttom_text">
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
   </body>
