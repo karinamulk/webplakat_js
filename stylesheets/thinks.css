@@ -6,6 +6,8 @@
   font-family: Pragmatica;
   font-size: 36px;
   color: #A4DDD4;
+  animation-play-state: paused;
+  display: none;
 }
 
 h1 {
@@ -14,9 +16,7 @@ h1 {
   color: #A4DDD4;
   transition: .3s;
 }
-#think1_text {
-  transition: all .3s;
-}
+
 .skip_buttom {
   height: 21%;
   position: absolute;
@@ -26,29 +26,119 @@ h1 {
 }
 #think1 {
   top: 40%;
-  left: 17.7%;
+  left: -50%;
+  animation: think_left 22s linear infinite;
+  animation-delay: -15s;
 }
 #think2 {
   top: 52%;
-  left: 17.7%;
+  right: -50%;
+  animation: think_right 22s linear infinite;
+  animation-delay: -4s;
 }
 #think3 {
   top: 63%;
-  left: 17.7%;
+  left: -50%;
   transition: 0s;
   z-index: 2;
+  animation: think_left 22s linear infinite;
+
 }
 #think4 {
-  top: 73%;
-  left: 17.7%;
+  top: 74%;
+  left: -50%;
   z-index: 2;
+  animation: think_left 22s linear infinite;
+  animation-delay: 14s;
+}
+#think5 {
+  top: -5%;
+  right: -50%;
+  animation: think_right 22s linear infinite;
+
+}
+#think6 {
+  top: 10%;
+  right: -50%;
+  animation: think_right 22s linear infinite;
+  animation-delay: -12s;
+}
+#think7 {
+  top: 20%;
+  left: -50%;
+  animation: think_left 22s linear infinite;
+  animation-delay: -20s;
+}
+#think8 {
+  top: 30%;
+  right: -50%;
+  animation: think_right 22s linear infinite;
+  animation-delay: -7s;
+}
+#think9 {
+  top: 40%;
+  left: -50%;
+  animation: think_left 22s linear infinite;
+  animation-delay: -9s;
+
+}
+#think10 {
+  bottom: 40%;
+  left: -50%;
+  animation: think_left 22s linear infinite;
+  animation-delay: -18s;
+
+}
+#think11 {
+  bottom: 29%;
+  right: 0%;
+  animation: think_right 22s linear infinite;
+
+}
+#think12 {
+  top: -10%;
+  right: 0%;
+  animation: think_right 22s linear infinite;
+  animation-delay: -10s;
+
+}
+#think13 {
+  top: 5%;
+  right: -50%;
+  animation: think_right 22s linear infinite;
+  animation-delay: -2s;
+}
+#think14 {
+  top: 20%;
+  left: -50%;
+  animation: think_left 22s linear infinite;
+  animation-delay: -16s;
+}
+#think15 {
+  top: 33%;
+  left: -50%;
+  animation: think_left 22s linear infinite;
+  animation-delay: -4s;
 }
 .skip_buttom:hover {
 opacity: 0%;
 transition: 0s;
 transition: .1s;
 }
+
 .skip_buttom:hover ~ h1 {
   color: black;
   transition: .1s;
+}
+
+@keyframes think_left {
+  0% {left: -50%;}
+  50% {left: 110%}
+  100% {left: 110%}
+}
+
+@keyframes think_right {
+  0% {right: -50%;}
+  50% {right: 110%}
+  100% {right: 110%}
 }
