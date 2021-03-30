@@ -71,7 +71,7 @@
   font-size: 30px;
   color:#A4DDD4;
   top: 15%;
-  left: calc(50% - 128px);
+  left: calc(50% - 135px);
 }
 .color_round {
   position: absolute;
@@ -115,7 +115,7 @@
   font-size: 30px;
   color: black;
   top: calc(50% - 15px);
-  left: calc(50% - 61px);
+  left: calc(50% - 66px);
 }
 .blur_bottom {
   position: absolute;
