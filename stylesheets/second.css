@@ -86,7 +86,7 @@
 }
 #color2 {
   background: #F28EC0;
-  left: calc(50% - 39px);
+  left: 39.4%;
 }
 #color3 {
   background: #F8E436;
@@ -225,6 +225,20 @@
   background: url( '../images/izv_mode2.svg');
   background-size: 2000% 100%;
   background-position: -0 top;
+}
+.izv_second_extra {
+position: absolute;
+width: 10%;
+height: 3.575%;
+background-color: #F28EC0;
+}
+#extra1 {
+  left: 0;
+  top: 18.105%;
+}
+#extra2 {
+  right: 0;
+  top: 46.54%;
 }
 .buttom_rotate_30 {
   transform: rotate(-30deg);
