@@ -4,6 +4,7 @@
 @import "third.css";
 @import "thinks.css";
 @import "firstpage.css";
+@import "responsive.css";
 @font-face {
 font-family: 'Pragmatica';
 src: url("../fonts/PRG65.otf");
