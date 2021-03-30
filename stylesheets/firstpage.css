@@ -9,6 +9,7 @@
   background: #F28EC0;
   border-radius: 18px;
   transition: all .3s;
+  display: none;
 }
 .firstpage_text {
   height: 19.2%;
