@@ -7,7 +7,7 @@
   font-size: 36px;
   color: #A4DDD4;
   animation-play-state: paused;
-  display: none;
+  /* display: none; */
 }
 
 h1 {
@@ -130,7 +130,9 @@ transition: .1s;
   color: black;
   transition: .1s;
 }
-
+#think1:hover, #think2:hover, #think3:hover, #think4:hover, #think5:hover, #think6:hover, #think7:hover, #think8:hover, #think9:hover, #think10:hover, #think11:hover, #think12:hover, #think13:hover, #think14:hover, #think15:hover {
+  animation-play-state: paused;
+}
 @keyframes think_left {
   0% {left: -50%;}
   50% {left: 110%}
