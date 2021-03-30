@@ -194,7 +194,7 @@ border: 5px solid #71B4A9;
   font-size: 36px;
   color: black;
   top: calc(50% - 18px);
-  left: calc(50% - 112px);
+  left: calc(50% - 116px);
 }
 .mode_buttom {
   position: absolute;
@@ -261,5 +261,5 @@ border: 5px solid #71B4A9;
   font-size: 36px;
   color:#A4DDD4;
   top: 0;
-  left: calc(50% - 124px);
+  left: calc(50% - 132px);
 }
