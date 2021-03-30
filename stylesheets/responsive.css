@@ -1,0 +1,59 @@
+@media all and (max-width: 1440px) {
+  .izv_second_extra {display: none;}
+}
+@media only screen and (min-width: 1680px) {
+  body .sootnosheniye {padding-bottom: 179.52%;}
+  .first .think_counter {width: 24.3%; height: 20.1%; top: 5.4%; left: 2.6%;}
+  .think_counter #think_counter1 {font-size: 38px; left: calc(50% - 63px); top: 16%;}
+  .think_counter .think_counter_result {font-size: 115px;}
+  .first .activity {top: 28.7%; left: 2.6%; height: 12.6%; width: 27.8%;}
+  .activity #activity_text {font-size: 38px; left: calc(50% - 131px); top: 9%;}
+  .activity #point1, #point2 {font-size: 30px;}
+  .first .mode {right: 4.6%; width: 22.6%;}
+  .mode #mode_title {font-size: 38px; left: calc(50% - 140px);}
+  .mode #mode_text {font-size: 38px; left: calc(50% - 123px);}
+  body .think {font-size: 38px;}
+  .second .buttom {width: 4.78%; height: 8.47%;}
+  .second .buttom1 {left: 14.2%; top: 7.25%;}
+  .second .buttom2 {right: 12%;}
+  .second .colorblock {bottom: 15.4%; width: 27.2%; height: 20.1%;}
+  .colorblock #color_text {font-size: 36px; left: calc(50% - 163px);}
+  .second .blurblock {width: 21.9%; height: 5%; bottom: 6.7%; right: 15.7%;}
+  .blurblock #blur_text {font-size: 36px; left: calc(50% - 79px); top: calc(50% - 18px);}
+  .third .keyboard {width: 7.14%;}
+  .third #keyboard1 {right: 24.5%;}
+  .third #keyboard2 {left: 33.2%; width: 19%; top: 26%;}
+  .third #keyboard3 {left: 49.7%; top: 46.5%;}
+  .third #keyboard4 {right: 33.3%; top: 46.5%;}
+  .third #keyboard5 {left: 33.2%; width: 14.4%; top: 46.5%;}
+  .third .light_triangle {right: 7.1%; width: 4.3%;}
+  .third .light_round {right: 6.85%; width: 4.76%;}
+  .third .light_cross {width: 4.76%; right: 6.9%;}
+  .third .line {bottom: 17.3%;}
+  .third .line_text2 {left: 64.85%;}
+  .third .bottom_bar {bottom: 1.1%;}
+  .bottom_bar #bar_text1 {margin-left: 2.4%;}
+  .bottom_bar #bar_text4 {margin-right: 2.4%;}
+  .bottom_bar .bar_text {padding: 1.35% 0.9%;}
+  .bottom_bar #bar_text3 {width: 48.5%;}
+  .second .izv_second1 {width: 43%; left: 7.2%; top: -39.85%;}
+  .second .izv_second2 {width: 45%; right: 7.5%; top: -9.86%;}
+  .second .izv_vision {width: 70.1%;}
+  .first .izv1 {background: url( '../images/first1-1680.svg'); width: 52.385%; right: -2.5%; background-size: 2000% 100%;}
+  .first .izv2 {  background: url( '../images/first2-1680.svg'); background-size: 2000% 100% ; width: 102.25%; right: -2%;}
+  .third .izv_third1 {background: url( '../images/third-1680.svg'); background-size: 2000% 100.3%;}
+  .first #name1 {top: 44.13%; right: 20.6%}
+  .first #name2 {bottom: 40.7%; left: 30.9%;}
+  .second #name3 {bottom: 29.9%; left: 13.4%;}
+}
+
+@media only screen and (min-width: 1366px) and (max-width: 1439px)  {
+body .sootnosheniye {padding-bottom: 220.79%;}
+
+
+
+
+
+
+
+}
