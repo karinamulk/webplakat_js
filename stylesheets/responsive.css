@@ -1,6 +1,12 @@
 @media all and (max-width: 1440px) {
   .izv_second_extra {display: none;}
 }
+@media all and (min-width: 1280px) {
+  .class-ipadl {display: none;}
+}
+@media all and (max-width: 1023px) {
+  .class-ipadl {display: none;}
+}
 @media only screen and (min-width: 1680px) {
   body .sootnosheniye {padding-bottom: 179.52%;}
   .first .think_counter {width: 24.3%; height: 20.1%; top: 5.4%; left: 2.6%;}
@@ -146,7 +152,78 @@ body .sootnosheniye {padding-bottom: 220.79%;}
   .keyboard #keyboard_ALT {left: calc(50% - 25px);}
   .keyboard .keyboard_save_shadow {bottom: -8%;}
   .keyboard #keyboard_SAVE {left: calc(50% - 38px);}
-  .third .light_triangle {right: 6.25%; width: 5.6%;}
-  .third .light_round {right: 6%; width: 6.25%;}
-  .third .light_cross { right: 6.1%; width: 6.1%;}
+  .third .light_triangle { top: 13.5%; right: 6.94%; width: 5.8%; -webkit-mask: url("https://karinamulk.github.io/webplakat_js/images/triangle-ipadl.svg");}
+  .third .light_round {right: 6.5%; width: 6.56%; top: 55%;}
+  .third .light_cross { right: 6.4%; width: 6.6%; top: 33.9%;}
+  .third .line {height: 7.2%; bottom: 18.3%;}
+  .third .line_text {font-size: 24px; top: calc(50% - 12px);}
+  .third #line_text_unsaved {left: calc(50% - 196px);}
+  .third #line_text_saved {left: calc(50% - 135px);}
+  .third .line_text2 { font-size: 24px; left: 69.5%; top: calc(50% - 14px)}
+  .third .bottom_bar {bottom: 2.27%;}
+  .bottom_bar .bar_text {margin: 1% 1% 1.3% 1%; font-size: 30px; padding: 2.2% 1.6%;}
+  .bottom_bar #bar_text3 {width: 28.5%;}
+  .second .class1440 {display: none;}
+  .second .izv_vision {width: 45.09%; left: 0%; bottom: 9%;}
+  .first .izv1 {background: url( '../images/first1-ipadl.svg'); width: 58.57%; height: 82.81%; right: -2.9%; background-size: 2000% 100%; top: -3.4%;}
+  .first .izv2 {background: url( '../images/first2-ipadl.svg'); width: 99.6%; background-size: 2000% 100%; right: -2.5%; height: 106.96%;}
+  .second .izv_second2 {background: url( '../images/izv_mode1-ipadl.svg'); background-size: 2000% 100%; width: 55.66%; right: -2.9%; top: 8.902%; height: 58.67%;}
+  .second .izv_second1 {background: url( '../images/izv_mode2-ipadl.svg'); background-size: 2000% 100%; width: 70.31%; left: -3%; height: 38.134%; top: -5.7%;}
+  .third .izv_third1 {background: url( '../images/third1-ipadl.svg'); background-size: 2000% 100%; width: 100.57%; height: 78%; top: -4.2%;}
+  .content .names {font-size: 24px;}
+  .first #name1 {top: 39.1%; right: 25.5%;}
+  .first #name2 {bottom: 40.8%; left: 23.6%;}
+  .second #name3 {bottom: 5.5%; left: 11%;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body .sootnosheniye {padding-bottom: 349.35%;}
+  .content .first {height: 36.83%;}
+  .content .second {height: 38.976%;}
+  .content .third {height: 24.194%;}
+  .first .think_counter {left: 4.6%; width: 35.4%; top: 3.7%; height: 15.2%;}
+  .think_counter .think_counter_result {font-size: 74px; bottom: 16%;}
+  .think_counter #think_counter1 {font-size: 24px; left: calc(50% - 40px);}
+  .first .activity { left: 4.6%; width: 40.7%; top: 21.6%; height: 9.7%; border: 3px solid #71B4A9;}
+  .activity #activity_text {font-size: 24px; left: calc(50% - 83px);}
+  .activity #point1, #point2 {font-size: 22px;}
+  .activity #point2 {right: 3%;}
+  .first .mode {right: 18.9%; width: 38%; bottom: -22.4%; height: 17.1%;}
+  .mode .mode_screen {border: 3px solid #71B4A9; height: 35%;}
+  .mode #mode_text {font-size: 30px; left: calc(50% - 97px); top: calc(50% - 15px);}
+  .mode #mode_title {font-size: 30px; left: calc(50% - 110px);}
+  .second .buttom {width: 11.1%;}
+  .second .buttom1 {left: 9.5%; top: 8.55%;}
+  .second .buttom2 {right: 20.3%; top: 51.5%;}
+  .second .colorblock {right: 3.5%; bottom: 16.2%; width: 41.8%; height: 15.1%;}
+  .colorblock #color_text {font-size: 24px; left: calc(50% - 108px);}
+
+  .second .blurblock {width: 35.5%; height: 3.3%; bottom: 11.2%; right: 9.8%;}
+  .blurblock #blur_text {font-size: 24px; left: calc(50% - 53px); top: calc(50% - 15px);}
+  .blurblock .blur_title {width: 57%;}
+  .blurblock .blur_bottom {width: 13.1%;}
+  .blur_bottom  .blur_bottom_text {height: 8%; left: calc(50% - 7px);}
+  h1 {font-size: 30px;}
+.think {padding: 2.5% 2.5%;}
+
+.third .keyboard {width: 11.7%; height: 14%; border-radius: 17px;}
+.keyboard .keyboard_text {font-size: 30px; top: calc(50% - 15px);}
+.keyboard #keyboard_S {left: 12%;}
+.keyboard #keyboard_Y {right: 12%;}
+.third #keyboard1 {right: 25.8%; top: 9%;}
+.third #keyboard2 {width: 31.1%; left: 19%; top: 27.5%;}
+.keyboard #keyboard_SHIFT {left: calc(50% - 44px);}
+.third #keyboard3 {left: 46.8%; top: 46.8%;}
+.third #keyboard4 {right: 25.8%; top: 46.8%;}
+.third #keyboard5 {width: 23.6%; left: 19%; top: 46.8%;}
+.keyboard #keyboard_ALT {left: calc(50% - 25px);}
+.keyboard .keyboard_save_shadow {bottom: -8%;}
+.keyboard #keyboard_SAVE {left: calc(50% - 38px);}
+
+.third .light_triangle { top: 13.5%; right: 6.94%; width: 5.8%; -webkit-mask: url("https://karinamulk.github.io/webplakat_js/images/triangle-ipadl.svg");}
+.third .light_round {right: 6.5%; width: 6.56%; top: 55%;}
+.third .light_cross { right: 6.4%; width: 6.6%; top: 33.9%;}
+
+
+
 }
