@@ -431,14 +431,17 @@ $(document).ready(function(){
       if ($(window).width() >= 1680) {
         $(".line_text2").css("left", "61.1%");
       }
-      if ($(window).width() > 1366 && $(window).width() <= 1440) {
+      if ($(window).width() >= 1440 && $(window).width() < 1680) {
         $(".line_text2").css("left", "62.9%");
       }
-      if ($(window).width() > 1280 && $(window).width() <= 1366) {
+      if ($(window).width() >= 1366 && $(window).width() < 1440) {
         $(".line_text2").css("left", "63.6%");
       }
-      if ($(window).width() > 1024 && $(window).width() <= 1280) {
+      if ($(window).width() >= 1280 && $(window).width() < 1366) {
         $(".line_text2").css("left", "64.5%");
+      }
+      if ($(window).width() >= 1024 && $(window).width() < 1280) {
+        $(".line_text2").css("left", "63.5%");
       }
     }, 300);
   });
