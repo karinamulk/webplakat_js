@@ -133,6 +133,7 @@
   right: 8.5%;
   top: 16.6%;
   animation: light2 2s steps(1) infinite;
+  -webkit-mask-position: 0 0;
 }
 @keyframes light2 {
   0% {background: #F28EC0;}
