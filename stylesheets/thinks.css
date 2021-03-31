@@ -8,6 +8,7 @@
   color: #A4DDD4;
   animation-play-state: paused;
   /* display: none; */
+  z-index: 21;
 }
 
 h1 {
