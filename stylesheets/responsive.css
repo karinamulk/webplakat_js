@@ -12,7 +12,7 @@
   .first .mode {right: 4.6%; width: 22.6%;}
   .mode #mode_title {font-size: 38px; left: calc(50% - 140px);}
   .mode #mode_text {font-size: 38px; left: calc(50% - 123px);}
-  body .think {font-size: 38px;}
+  h1 {font-size: 38px;}
   .second .buttom {width: 4.78%; height: 8.47%;}
   .second .buttom1 {left: 14.2%; top: 7.25%;}
   .second .buttom2 {right: 12%;}
@@ -110,4 +110,43 @@ body .sootnosheniye {padding-bottom: 220.79%;}
   .first #name1 {right: 17.5%;}
   .first #name2 {left: 24.8%;}
   .second #name3 {left: 5.1%;}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  body .sootnosheniye {padding-bottom: 247.46%;}
+  .content .first {height: 34.312%;}
+  .content .second {height: 40.359%;}
+  .first .think_counter {left: 2.9%; width: 30.5%; top: 5.8%; height: 19.9%;}
+  .think_counter .think_counter_result {font-size: 84px; bottom: 16%;}
+  .first .activity { left: 2.9%; width: 34.6%; top: 29%; height: 12.2%;}
+  .first .mode {right: 18.4%; width: 31.2%; bottom: -22.3%; height: 20.5%;}
+  .mode .mode_screen {border: 4px solid #71B4A9;}
+  .mode #mode_text {font-size: 30px; left: calc(50% - 97px);}
+  .mode #mode_title {font-size: 30px; left: calc(50% - 110px);}
+  .second .buttom {width: 7.7%;}
+  .second .buttom1 {left: 13.9%; top: 9%;}
+  .second .buttom2 {right: 20.8%; top: 50%;}
+  .second .colorblock {right: 5.9%; bottom: 14.4%; width: 31.3%; height: 15.4%;}
+  .colorblock #color_text {font-size: 24px; left: calc(50% - 108px);}
+  .second .blurblock {width: 26.7%; height: 3.5%; bottom: 8.8%; right: 10.5%;}
+  .blurblock #blur_text {font-size: 24px; left: calc(50% - 53px); top: calc(50% - 15px);}
+  .blurblock .blur_title {width: 57%;}
+  .blurblock .blur_bottom {width: 13.1%;}
+  .blur_bottom  .blur_bottom_text {height: 8%; left: calc(50% - 7px);}
+  h1 {font-size: 30px;}
+  .third .keyboard {width: 8.6%; height: 14%; border-radius: 17px;}
+  .keyboard .keyboard_text {font-size: 30px; top: calc(50% - 15px);}
+  .keyboard #keyboard_S {left: 12%;}
+  .keyboard #keyboard_Y {right: 12%;}
+  .third #keyboard1 {right: 27%; top: 8%;}
+  .third #keyboard2 {width: 23.4%; left: 27%; top: 26.5%;}
+  .keyboard #keyboard_SHIFT {left: calc(50% - 44px);}
+  .third #keyboard3 {left: 47.9%; top: 45.8%;}
+  .third #keyboard4 {right: 31.4%; top: 45.8%;}
+  .third #keyboard5 {width: 17.6%; left: 27%; top: 45.8%;}
+  .keyboard #keyboard_ALT {left: calc(50% - 25px);}
+  .keyboard .keyboard_save_shadow {bottom: -8%;}
+  .keyboard #keyboard_SAVE {left: calc(50% - 38px);}
+  .third .light_triangle {right: 6.25%; width: 5.6%;}
+  .third .light_round {right: 6%; width: 6.25%;}
+  .third .light_cross { right: 6.1%; width: 6.1%;}
 }
