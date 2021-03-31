@@ -480,8 +480,12 @@ $(document).ready(function(){
   console.log(serious[1])
 
   $("#mode_buttom_left").click(function(){
+
     $("#mode_text").text("ЛАЙТОВЫЙ");
     $("#mode_text").css("left", "calc(50% - 106px)");
+    if ($(window).width() < 1280) {
+      $("#mode_text").css("left", "calc(50% - 88px)");
+    }
     $("#think1_text").html(lite[0]);
     $("#think2_text").html(lite[1]);
     $("#think3_text").html(lite[2]);
@@ -503,7 +507,9 @@ $(document).ready(function(){
   $("#mode_buttom_right").click(function(){
     $("#mode_text").text("СЕРЬЁЗНЫЙ");
     $("#mode_text").css("left", "calc(50% - 116px)");
-
+    if ($(window).width() < 1280) {
+      $("#mode_text").css("left", "calc(50% - 97px)");
+    }
     $("#think1_text").html(serious[0]);
     $("#think2_text").html(serious[1]);
     $("#think3_text").html(serious[2]);
