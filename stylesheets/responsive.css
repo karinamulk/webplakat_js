@@ -16,6 +16,21 @@
 @media all and (min-width: 768px) {
   .iphone, .class-iphone {display: none;}
 }
+@media all and (min-width: 1280px) {
+  .fp-ipadl {display: none;}
+}
+@media all and (max-width: 1023px) {
+  .container .fp-ipadl {display: none;}
+}
+@media all and (min-width: 1024px) {
+  .fp-ipadp {display: none;}
+}
+@media all and (max-width: 767px) {
+  .container .fp-ipadp {display: none;}
+}
+@media all and (min-width: 768px) {
+  .container .fp-iphone {display: none;}
+}
 @media only screen and (min-width: 1680px) {
   body .sootnosheniye {padding-bottom: 179.52%;}
   .first .think_counter {width: 24.3%; height: 20.1%; top: 5.4%; left: 2.6%;}
@@ -188,6 +203,22 @@ body .sootnosheniye {padding-bottom: 220.79%;}
   .first #name1 {top: 39.1%; right: 25.5%;}
   .first #name2 {bottom: 40.8%; left: 23.6%;}
   .second #name3 {bottom: 5.5%; left: 11%;}
+  .allpage .container {margin-top: 7%; padding-bottom: 60.7%;}
+  .allpage .fp-desktop {display: none;}
+  .allpage #fp1-ipadl {position: absolute; width: 20%; top: 0; left: 19.9%; }
+  .allpage #fp2-ipadl {position: absolute; width: 14.5%; top: 0;right: 39.4%;}
+  .allpage #fp3-ipadl {position: absolute; width: 18.85%; top: 0; right: 7.1%;}
+  .allpage #fp4-ipadl {position: absolute; width: 23.8%; bottom: 25.4%; left: 0;}
+  .allpage #fp5-ipadl {position: absolute; width: 41.15%; bottom: 6.4%; left: 2.25%;}
+  .allpage #fp6-ipadl {position: absolute; width: 51.4%; bottom: 19.4%; right: 0%;}
+
+  .allpage #dobro {left: 3.7%; top: 27.6%; width: 27.4%;}
+  .allpage #pozhal {right: 3.7%; top: 27.6%; width: 60.7%;}
+  .allpage #mozg {top: 47%; left: 34%; width: 32.2%;}
+  .allpage .fp_buttom {right: 3.6%; bottom: 12.7%; height: 14.8%; border-radius: 10px;}
+  .fp_buttom .fp_buttom_base {bottom:9.6%; height: 80.8%; left: 5.2%; width: 89.6%;}
+  .fp_buttom_base #fp_buttom_text {top: 15%;}
+  .allpage .firstpage_round {height: 1.65%;}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -253,6 +284,28 @@ body .sootnosheniye {padding-bottom: 220.79%;}
   .first #name1 {top: 34.3%; right: 24.6%;}
   .first #name2 {bottom: 51.1%; left: 19.7%;}
   .second #name3 {bottom:4.8%; left: 6.2%;}
+
+  .allpage .container {margin-top: 9%; padding-bottom: 115.4%; margin-left: 6.2%; margin-right: 6.2%;}
+  .allpage .fp-desktop {display: none;}
+  .allpage #dobro {left: 28.7%; top: 13.1%; width: 42%;}
+  .allpage #pozhal {right: 3.3%; top: 27.3%; width: 93.9%;}
+  .allpage #mozg {top: 41.5%; left: 24.9%; width: 49.8%;}
+
+  .allpage .fp_buttom {right: 34.6%; bottom: 12.9%; height: 11.5%; border-radius: 10px; width: 30.8%;}
+  .fp_buttom .fp_buttom_base {bottom:9.6%; height: 80.8%; left: 5.2%; width: 89.6%;}
+  .fp_buttom_base #fp_buttom_text {top: 15%;}
+  .allpage .firstpage_round {display: none;}
+
+  .allpage .fp_bar {height: 1.65%; bottom: 5.8%;}
+  .allpage .fp_bar_active {height: 1.65%; bottom: 5.8%;}
+
+  .allpage #fp1-ipadp {position: absolute; width: 21.3%; top: 0; left: 6%; }
+  .allpage #fp2-ipadp {position: absolute; width: 10%; top: 0;right: 35.9%;}
+  .allpage #fp3-ipadp {position: absolute; width: 19.7%; top: 0; right: 3.6%;}
+  .allpage #fp4-ipadp {position: absolute; width: 36.4%; bottom: 5.8%; left: 2.9%;}
+  .allpage #fp5-ipadp {position: absolute; width: 45.3%; bottom: 12%; left: auto; right: 0;}
+  .allpage #fp6-ipadp {position: absolute; width: 23.9%; bottom: 34.8%; right: -0.2%;}
+
 }
 @media only screen and (max-width: 767px) {
   body .sootnosheniye {padding-bottom: 544.06%;}
@@ -330,4 +383,29 @@ body .sootnosheniye {padding-bottom: 220.79%;}
   .first #name1 {top: 27%; right: 17.4%; transform: rotate(-90deg);}
   .first #name2 {bottom: 63.8%; left: 27.6%;}
   .second #name3 {bottom: 26%; left: -4%; transform: rotate(-90deg);}
+
+  .allpage .container {margin-top: 9%; padding-bottom: 159.5%; margin-left: 6.1%; margin-right: 6.1%; border-radius: 10px;}
+  .allpage .fp-desktop {display: none;}
+  .allpage .firstpage_round {display: none;}
+
+  .allpage #dobro {left: 29.5%; top: 10.35%; width: 41%;}
+  .allpage #pozhal {right: 4%; top: 20.95%; width: 92%;}
+  .allpage #mozg {top: 31.5%; left: 25.55%; width: 48.9%;}
+
+  .allpage .fp_buttom {right: 24%; bottom: 9.1%; height: 13%; border-radius: 5px; width: 50%;}
+  .fp_buttom .fp_buttom_base {bottom:5.6%; height: 88.8%; left: 3.2%; width: 93.6%;}
+  .fp_buttom_base #fp_buttom_text {top: 12%; width: 90%; left: 5%;}
+
+  .allpage .fp_bar {height: 0.95%; bottom: 5.1%; border-radius: 5px; left: 4%; width: 92%;}
+  .allpage .fp_bar_active {height: 0.95%; bottom: 5.1%; border-radius: 5px; left: 4%;}
+  @keyframes download {
+    0% {left: 4%; width: 2%}
+    100% {left: 4%; width: 92%}
+  }
+  .allpage #fp1-iphone {position: absolute; width: 22.4%; top: 0; left: 4.5%; }
+  .allpage #fp2-iphone {position: absolute; width: 10.8%; top: 0;right: 35.4%;}
+  .allpage #fp3-iphone {position: absolute; width: 21.2%; top: 0; right: 3.8%;}
+  .allpage #fp4-iphone {position: absolute; width: 45.8%; bottom: 5%; left: 3.9%;}
+  .allpage #fp5-iphone {position: absolute; width: 43.2%; bottom: 33%; left: auto; right: 0;}
+  .allpage #fp6-iphone {position: absolute; width: 27.5%; bottom: 48.7%; right: -3.5%;}
 }
