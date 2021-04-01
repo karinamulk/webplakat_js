@@ -8,7 +8,7 @@
   background: url( '../images/first1.svg');
   background-size: 2000% 100% ;
   background-position: -0 top;
-  /* animation: izv1 1s steps(1) alternate infinite; */
+  animation: izv1 1s steps(1) alternate infinite;
 }
 .names {
   position: absolute;
@@ -59,7 +59,7 @@
   background: url( '../images/first2.svg');
   background-size: 2000% 100% ;
   background-position: -0 top;
-  /* animation: izv1 1s steps(1) alternate infinite; */
+  animation: izv1 1s steps(1) alternate infinite;
 }
 .think_counter {
   position: absolute;
@@ -98,7 +98,7 @@ border: 5px solid #71B4A9;
   font-size: 90px;
   color: #A4DDD4;
   bottom: 15%;
-  /* opacity: 0; */
+  opacity: 0;
 }
 #think_counter_result1 {
   left: 16.4%;
