@@ -60,6 +60,7 @@
   .first #name1 {top: 44.13%; right: 20.6%}
   .first #name2 {bottom: 40.7%; left: 30.9%;}
   .second #name3 {bottom: 29.9%; left: 13.4%;}
+  .allpage .container {margin-top: 5.5%;}
 }
 
 @media only screen and (min-width: 1366px) and (max-width: 1439px)  {
