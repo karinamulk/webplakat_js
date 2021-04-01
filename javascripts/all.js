@@ -443,6 +443,9 @@ $(document).ready(function(){
       if ($(window).width() >= 1024 && $(window).width() < 1280) {
         $(".line_text2").css("left", "63.5%");
       }
+      if ($(window).width() >= 768 && $(window).width() < 1023) {
+        $(".line_text2").css("left", "68.1%");
+      }
     }, 300);
   });
 
