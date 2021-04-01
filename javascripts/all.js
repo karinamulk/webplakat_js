@@ -56,27 +56,27 @@ $(document).ready(function(){
 
 
 
-  // let time = 0;
-  // setInterval(function(){
-  //
-  //   $("#think_counter_result4").html(time);
-  //   time += 1;
-  //   if (time > 10) {
-  //     $("#think_counter_result3").addClass("blocker");
-  //   }
-  //   if (time > 100) {
-  //     $("#think_counter_result2").addClass("blocker");
-  //   }
-  //   if (time > 1000) {
-  //     $("#think_counter_result1").addClass("blocker");
-  //   }
-  //   if (time > 9999) {
-  //     time = 0;
-  //     $("#think_counter_result1").removeClass("blocker");
-  //     $("#think_counter_result2").removeClass("blocker");
-  //     $("#think_counter_result3").removeClass("blocker");
-  //   }
-  // }, 100);
+  let time = 0;
+  setInterval(function(){
+
+    $("#think_counter_result4").html(time);
+    time += 1;
+    if (time > 10) {
+      $("#think_counter_result3").addClass("blocker");
+    }
+    if (time > 100) {
+      $("#think_counter_result2").addClass("blocker");
+    }
+    if (time > 1000) {
+      $("#think_counter_result1").addClass("blocker");
+    }
+    if (time > 9999) {
+      time = 0;
+      $("#think_counter_result1").removeClass("blocker");
+      $("#think_counter_result2").removeClass("blocker");
+      $("#think_counter_result3").removeClass("blocker");
+    }
+  }, 100);
 
 
   let izv_second_counter2 = 1;
@@ -443,12 +443,19 @@ $(document).ready(function(){
       if ($(window).width() >= 1024 && $(window).width() < 1280) {
         $(".line_text2").css("left", "63.5%");
       }
-      if ($(window).width() >= 768 && $(window).width() < 1023) {
+      if ($(window).width() >= 768 && $(window).width() < 1024) {
         $(".line_text2").css("left", "68.1%");
       }
-      if ( $(window).width() < 768) {
+      if ($(window).width() >= 650 && $(window).width() < 768) {
+        $(".line_text2").css("left", "70.1%");
+      }
+      if ( $(window).width() < 650) {
         $(".line_text2").css("left", "77%");
       }
+      if ($(window).width() >= 400 && $(window).width() < 501) {
+        $(".line_text2").css("left", "74.1%");
+      }
+
     }, 300);
   });
 
@@ -563,30 +570,30 @@ $(document).ready(function(){
   });
 
 
-  $(".fp_buttom").click(function(){
-    $(".fp_bar_active").css("animation-play-state", "running");
-    setTimeout(function(){
-      $(".fp_bar").css("background", "#A4DDD4");
-    }, 3000);
-    setTimeout(function(){
-      $(".allpage").css("opacity", "0%");
-      $(".content").css("opacity", "100%");
-      $(".think_counter_result").css("opacity", "100%");
-      $(".think").css("display", "block");
-      $(".izv1").removeClass("stop");
-      $(".izv2").removeClass("stop");
-      $(".izv_third1").removeClass("stop");
-      $(".active_point").removeClass("stop");
-      $(".cross").removeClass("stop");
-      $(".light_triangle").removeClass("stop");
-      $(".light_round").removeClass("stop");
-      $(".line_text2").removeClass("stop");
-      $("body").css("overflow", "visible");
-
-    }, 3100);
-    setTimeout(function(){
-      $(".allpage").css("display", "none");
-    }, 3400);
-  });
+  // $(".fp_buttom").click(function(){
+  //   $(".fp_bar_active").css("animation-play-state", "running");
+  //   setTimeout(function(){
+  //     $(".fp_bar").css("background", "#A4DDD4");
+  //   }, 3000);
+  //   setTimeout(function(){
+  //     $(".allpage").css("opacity", "0%");
+  //     $(".content").css("opacity", "100%");
+  //     $(".think_counter_result").css("opacity", "100%");
+  //     $(".think").css("display", "block");
+  //     $(".izv1").removeClass("stop");
+  //     $(".izv2").removeClass("stop");
+  //     $(".izv_third1").removeClass("stop");
+  //     $(".active_point").removeClass("stop");
+  //     $(".cross").removeClass("stop");
+  //     $(".light_triangle").removeClass("stop");
+  //     $(".light_round").removeClass("stop");
+  //     $(".line_text2").removeClass("stop");
+  //     $("body").css("overflow", "visible");
+  //
+  //   }, 3100);
+  //   setTimeout(function(){
+  //     $(".allpage").css("display", "none");
+  //   }, 3400);
+  // });
 
 });
