@@ -446,6 +446,9 @@ $(document).ready(function(){
       if ($(window).width() >= 768 && $(window).width() < 1023) {
         $(".line_text2").css("left", "68.1%");
       }
+      if ( $(window).width() < 768) {
+        $(".line_text2").css("left", "77%");
+      }
     }, 300);
   });
 
@@ -492,6 +495,9 @@ $(document).ready(function(){
     if ($(window).width() < 1280) {
       $("#mode_text").css("left", "calc(50% - 88px)");
     }
+    if ($(window).width() < 768) {
+      $("#mode_text").css("left", "calc(50% - 44px)");
+    }
     $("#think1_text").html(lite[0]);
     $("#think2_text").html(lite[1]);
     $("#think3_text").html(lite[2]);
@@ -515,6 +521,9 @@ $(document).ready(function(){
     $("#mode_text").css("left", "calc(50% - 116px)");
     if ($(window).width() < 1280) {
       $("#mode_text").css("left", "calc(50% - 97px)");
+    }
+    if ($(window).width() < 768) {
+      $("#mode_text").css("left", "calc(50% - 48px)");
     }
     $("#think1_text").html(serious[0]);
     $("#think2_text").html(serious[1]);
@@ -554,28 +563,28 @@ $(document).ready(function(){
   });
 
 
-  // $(".fp_buttom").click(function(){
-  //   $(".fp_bar_active").css("animation-play-state", "running");
-  //   setTimeout(function(){
-  //     $(".fp_bar").css("background", "#A4DDD4");
-  //   }, 3000);
-  //   setTimeout(function(){
-  //     $(".allpage").css("opacity", "0%");
-  //     $(".content").css("opacity", "100%");
-  //     $(".think_counter_result").css("opacity", "100%");
-  //     $(".think").css("display", "block");
-  //     $(".izv1").removeClass("stop");
-  //     $(".izv2").removeClass("stop");
-  //     $(".izv_third1").removeClass("stop");
-  //     $(".active_point").removeClass("stop");
-  //     $(".cross").removeClass("stop");
-  //     $(".light_triangle").removeClass("stop");
-  //     $(".light_round").removeClass("stop");
-  //     $(".line_text2").removeClass("stop");
-  //   }, 3100);
-  //   setTimeout(function(){
-  //     $(".allpage").css("display", "none");
-  //   }, 3400);
-  // });
+  $(".fp_buttom").click(function(){
+    $(".fp_bar_active").css("animation-play-state", "running");
+    setTimeout(function(){
+      $(".fp_bar").css("background", "#A4DDD4");
+    }, 3000);
+    setTimeout(function(){
+      $(".allpage").css("opacity", "0%");
+      $(".content").css("opacity", "100%");
+      $(".think_counter_result").css("opacity", "100%");
+      $(".think").css("display", "block");
+      $(".izv1").removeClass("stop");
+      $(".izv2").removeClass("stop");
+      $(".izv_third1").removeClass("stop");
+      $(".active_point").removeClass("stop");
+      $(".cross").removeClass("stop");
+      $(".light_triangle").removeClass("stop");
+      $(".light_round").removeClass("stop");
+      $(".line_text2").removeClass("stop");
+    }, 3100);
+    setTimeout(function(){
+      $(".allpage").css("display", "none");
+    }, 3400);
+  });
 
 });
