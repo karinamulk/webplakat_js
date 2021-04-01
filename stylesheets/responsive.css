@@ -7,6 +7,12 @@
 @media all and (max-width: 1023px) {
   .class-ipadl {display: none;}
 }
+@media all and (min-width: 1024px) {
+  .class-ipadp {display: none;}
+}
+@media all and (max-width: 767px) {
+  .class-ipadp {display: none;}
+}
 @media only screen and (min-width: 1680px) {
   body .sootnosheniye {padding-bottom: 179.52%;}
   .first .think_counter {width: 24.3%; height: 20.1%; top: 5.4%; left: 2.6%;}
@@ -193,37 +199,50 @@ body .sootnosheniye {padding-bottom: 220.79%;}
   .mode #mode_text {font-size: 30px; left: calc(50% - 97px); top: calc(50% - 15px);}
   .mode #mode_title {font-size: 30px; left: calc(50% - 110px);}
   .second .buttom {width: 11.1%;}
+  .buttom .handle_box {bottom: -5%;}
   .second .buttom1 {left: 9.5%; top: 8.55%;}
   .second .buttom2 {right: 20.3%; top: 51.5%;}
   .second .colorblock {right: 3.5%; bottom: 16.2%; width: 41.8%; height: 15.1%;}
   .colorblock #color_text {font-size: 24px; left: calc(50% - 108px);}
-
   .second .blurblock {width: 35.5%; height: 3.3%; bottom: 11.2%; right: 9.8%;}
   .blurblock #blur_text {font-size: 24px; left: calc(50% - 53px); top: calc(50% - 15px);}
   .blurblock .blur_title {width: 57%;}
   .blurblock .blur_bottom {width: 13.1%;}
   .blur_bottom  .blur_bottom_text {height: 8%; left: calc(50% - 7px);}
   h1 {font-size: 30px;}
-.think {padding: 2.5% 2.5%;}
-
-.third .keyboard {width: 11.7%; height: 14%; border-radius: 17px;}
-.keyboard .keyboard_text {font-size: 30px; top: calc(50% - 15px);}
-.keyboard #keyboard_S {left: 12%;}
-.keyboard #keyboard_Y {right: 12%;}
-.third #keyboard1 {right: 25.8%; top: 9%;}
-.third #keyboard2 {width: 31.1%; left: 19%; top: 27.5%;}
-.keyboard #keyboard_SHIFT {left: calc(50% - 44px);}
-.third #keyboard3 {left: 46.8%; top: 46.8%;}
-.third #keyboard4 {right: 25.8%; top: 46.8%;}
-.third #keyboard5 {width: 23.6%; left: 19%; top: 46.8%;}
-.keyboard #keyboard_ALT {left: calc(50% - 25px);}
-.keyboard .keyboard_save_shadow {bottom: -8%;}
-.keyboard #keyboard_SAVE {left: calc(50% - 38px);}
-
-.third .light_triangle { top: 13.5%; right: 6.94%; width: 5.8%; -webkit-mask: url("https://karinamulk.github.io/webplakat_js/images/triangle-ipadl.svg");}
-.third .light_round {right: 6.5%; width: 6.56%; top: 55%;}
-.third .light_cross { right: 6.4%; width: 6.6%; top: 33.9%;}
-
-
-
+  .think {padding: 2.5% 2.5%;}
+  .third .keyboard {width: 11.7%; height: 14%; border-radius: 17px;}
+  .keyboard .keyboard_text {font-size: 30px; top: calc(50% - 15px);}
+  .keyboard #keyboard_S {left: 12%;}
+  .keyboard #keyboard_Y {right: 12%;}
+  .third #keyboard1 {right: 25.8%; top: 9%;}
+  .third #keyboard2 {width: 31.1%; left: 19%; top: 27.5%;}
+  .keyboard #keyboard_SHIFT {left: calc(50% - 44px);}
+  .third #keyboard3 {left: 46.8%; top: 46.8%;}
+  .third #keyboard4 {right: 25.8%; top: 46.8%;}
+  .third #keyboard5 {width: 23.6%; left: 19%; top: 46.8%;}
+  .keyboard #keyboard_ALT {left: calc(50% - 25px);}
+  .keyboard .keyboard_save_shadow {bottom: -8%;}
+  .keyboard #keyboard_SAVE {left: calc(50% - 38px);}
+  .third .light_triangle { height: 6.75%; top: 13.8%; right: 5.8%; width: 6.3%; -webkit-mask: url("https://karinamulk.github.io/webplakat_js/images/triangle-ipadp.svg");}
+  .third .light_round {right: 5.1%; width: 7.56%; top: 60.2%; height: 8.9%;}
+  .third .light_cross { right: 5.2%; width: 6.6%; top: 37%; height: 8.8%;}
+  .third .line {height: 7.2%; bottom: 17.1%;}
+  .third .line_text {font-size: 24px; top: calc(50% - 14px);}
+  .third #line_text_unsaved {left: calc(50% - 196px);}
+  .third #line_text_saved {left: calc(50% - 135px);}
+  .third .line_text2 { font-size: 24px; left: 76%; top: calc(50% - 15px)}
+  .bottom_bar .bar_text {margin: 2.1% 1% 1.3% 1%; font-size: 30px; padding: 2.6% 2.4%;}
+  .bottom_bar #bar_text3 {width: 5%;}
+  .second .class1440 {display: none;}
+  .second .izv_vision {width: 48.21%; left: -5%; bottom: 8%;}
+  .first .izv1 {background: url( '../images/first1-ipadp.svg'); width: 61.17%; height: 72.86%; right: -4%; background-size: 2000% 100%; top: -3%;}
+  .first .izv2 {background: url( '../images/first2-ipadp.svg'); width: 106.57%; background-size: 2000% 100%; right: -3.8%; height: 106.26%; top: -3.2%;}
+  .second .izv_second2 {background: url( '../images/izv_mode1-ipadp.svg'); background-size: 2000% 100%; width: 57.29%; right: -4.1%; top: 11.5%; height: 57.377%;}
+  .second .izv_second1 {background: url( '../images/izv_mode2-ipadp.svg'); background-size: 2000% 100%; width: 70.31%; left: -4.2%; height: 40.164%; top: -5.7%;}
+  .third .izv_third1 {background: url( '../images/third-ipadp.svg'); background-size: 100% 100%; width: 100%; height: 78%; top: -4.2%;}
+  .content .names {font-size: 24px;}
+  .first #name1 {top: 34.3%; right: 24.6%;}
+  .first #name2 {bottom: 51.1%; left: 19.7%;}
+  .second #name3 {bottom:4.8%; left: 6.2%;}
 }
