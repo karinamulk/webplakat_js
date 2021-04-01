@@ -377,7 +377,7 @@ body .sootnosheniye {padding-bottom: 220.79%;}
   .second .izv_second2 {background: url( '../images/izv_mode1-iphone.svg'); background-size: 2000% 100%; width: 68.75%; right: -6%; top: 0.1%; height: 66.79%;}
   .second .izv_second1 {background: url( '../images/izv_mode2-iphone.svg'); background-size: 2000% 100%; width: 87.5%; left: -6%; height: 36.735%; top: -3.3%;}
   .second .class1440 {display: none;}
-  .second .izv_vision {width: 42.63%; left: -2%; bottom: 10%;}
+  .second .izv_vision {width: 42.63%;  bottom: 10%;}
   .third .izv_third1 {background: url( '../images/third-iphone.svg'); background-size: 100% 100%; width: 100%; height: 78%; top: -6.2%;}
   .content .names {font-size: 10px;}
   .first #name1 {top: 27%; right: 17.4%; transform: rotate(-90deg);}
