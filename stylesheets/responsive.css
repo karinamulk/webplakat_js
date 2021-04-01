@@ -92,6 +92,8 @@ body .sootnosheniye {padding-bottom: 220.79%;}
 .second .izv_second2 {width: 55.637%;}
 .first .izv2 {background: url( '../images/first2-1366.svg'); width: 102.24%; right: -2.6%; background-size: 2000% 100%;}
 .second .izv_vision {left: -11.7%; width: 67.68%;}
+.allpage .container {margin-top: 4.5%;}
+
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1365px)  {
@@ -126,6 +128,8 @@ body .sootnosheniye {padding-bottom: 220.79%;}
   .first #name1 {right: 17.5%;}
   .first #name2 {left: 24.8%;}
   .second #name3 {left: 5.1%;}
+  .allpage .container {margin-top: 4.7%;}
+
 }
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
   body .sootnosheniye {padding-bottom: 247.46%;}
