@@ -7,7 +7,7 @@
   font-size: 36px;
   color: #A4DDD4;
   animation-play-state: paused;
-  display: none;
+  /* display: none; */
   z-index: 21;
 }
 
@@ -15,7 +15,7 @@ h1 {
   font-family: Pragmatica;
   font-size: 36px;
   color: #A4DDD4;
-  transition: .3s;
+  transition: all .3s;
 }
 
 .skip_buttom {
@@ -23,7 +23,7 @@ h1 {
   position: absolute;
   left: 6px;
   top: 6px;
-  transition: .3s;
+  transition: all .3s;
 }
 #think1 {
   top: 40%;
@@ -40,7 +40,7 @@ h1 {
 #think3 {
   top: 63%;
   left: -50%;
-  transition: 0s;
+  transition: all 0s;
   z-index: 2;
   animation: think_left 22s linear infinite;
 
@@ -124,12 +124,12 @@ h1 {
 .skip_buttom:hover {
 opacity: 0%;
 transition: 0s;
-transition: .1s;
+transition: all .1s;
 }
 
 .skip_buttom:hover ~ h1 {
   color: black;
-  transition: .1s;
+  transition: all .1s;
 }
 #think1:hover, #think2:hover, #think3:hover, #think4:hover, #think5:hover, #think6:hover, #think7:hover, #think8:hover, #think9:hover, #think10:hover, #think11:hover, #think12:hover, #think13:hover, #think14:hover, #think15:hover {
   animation-play-state: paused;
