@@ -10,10 +10,10 @@
 @media all and (min-width: 1024px) {
   .class-ipadp {display: none;}
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 500px) {
   .class-ipadp {display: none;}
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 501px) {
   .iphone, .class-iphone {display: none;}
 }
 @media all and (min-width: 1280px) {
@@ -25,10 +25,10 @@
 @media all and (min-width: 1024px) {
   .fp-ipadp {display: none;}
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 500px) {
   .container .fp-ipadp {display: none;}
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 500px) {
   .container .fp-iphone {display: none;}
 }
 @media only screen and (min-width: 1680px) {
@@ -77,6 +77,11 @@
   .second #name3 {bottom: 29.9%; left: 13.4%;}
   .allpage .container {margin-top: 5%;}
 }
+@media only screen and (min-width: 1530px) and (max-width: 1679px) {
+  .think_counter .think_counter_result {font-size: 100px; bottom: 16%;}
+  .think_counter #think_counter1 {font-size: 34px; left: calc(50% - 57px);}
+
+}
 
 @media only screen and (min-width: 1366px) and (max-width: 1439px)  {
 body .sootnosheniye {padding-bottom: 220.79%;}
@@ -111,7 +116,7 @@ body .sootnosheniye {padding-bottom: 220.79%;}
 
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1365px)  {
+@media only screen and (min-width: 1280px) and (max-width: 1365px)  {
   body .sootnosheniye {padding-bottom: 235.625%;}
   .first .think_counter {left: 4%; width: 25%;}
   .first .activity { left: 4%; width: 28.5%;}
@@ -220,8 +225,11 @@ body .sootnosheniye {padding-bottom: 220.79%;}
   .fp_buttom_base #fp_buttom_text {top: 15%;}
   .allpage .firstpage_round {height: 1.65%;}
 }
+@media only screen and (min-width: 1150px) and (max-width: 1279px) {
+  .think_counter .think_counter_result {font-size: 100px; bottom: 16%;}
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}
+@media only screen and (min-width: 500px) and (max-width: 1023px) {
   body .sootnosheniye {padding-bottom: 349.35%;}
   .content .first {height: 36.83%;}
   .content .second {height: 38.976%;}
@@ -307,7 +315,134 @@ body .sootnosheniye {padding-bottom: 220.79%;}
   .allpage #fp6-ipadp {position: absolute; width: 23.9%; bottom: 34.8%; right: -0.2%;}
 
 }
-@media only screen and (max-width: 767px) {
+
+@media only screen and (min-width: 900px) and (max-width: 1023px) {
+  .think_counter .think_counter_result {font-size: 94px; bottom: 16%;}
+  .think_counter #think_counter1 {font-size: 30px; left: calc(50% - 50px);}
+
+  .activity #activity_text {font-size: 30px; left: calc(50% - 100px);}
+  .mode #mode_text {font-size: 36px; left: calc(50% - 116px); top: calc(50% - 18px);}
+  .colorblock #color_text {font-size: 30px; left: calc(50% - 135px);}
+  .blurblock #blur_text {font-size: 30px; left: calc(50% - 66px); top: calc(50% - 17px);}
+  .keyboard .keyboard_text {font-size: 36px; top: calc(50% - 15px);}
+  .keyboard #keyboard_SHIFT {left: calc(50% - 52px);}
+  .keyboard #keyboard_ALT {left: calc(50% - 30px);}
+  .keyboard #keyboard_SAVE {left: calc(50% - 46px);}
+  .third .line_text {font-size: 30px; top: calc(50% - 14px);}
+  .third #line_text_unsaved {left: calc(50% - 245px);}
+  .third #line_text_saved {left: calc(50% - 169px);}
+  .bottom_bar .bar_text {margin: 2.1% 1% 1.3% 1%; font-size: 36px; padding: 2.6% 3.2%;}
+
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 899px) {
+  .think_counter .think_counter_result {font-size: 85px; bottom: 16%;}
+  .think_counter #think_counter1 {font-size: 30px; left: calc(50% - 50px);}
+
+  .activity #activity_text {font-size: 30px; left: calc(50% - 100px);}
+  .mode #mode_text {font-size: 36px; left: calc(50% - 116px); top: calc(50% - 18px);}
+  .colorblock #color_text {font-size: 30px; left: calc(50% - 135px);}
+  .blurblock #blur_text {font-size: 30px; left: calc(50% - 66px); top: calc(50% - 17px);}
+  .keyboard .keyboard_text {font-size: 36px; top: calc(50% - 15px);}
+  .keyboard #keyboard_SHIFT {left: calc(50% - 52px);}
+  .keyboard #keyboard_ALT {left: calc(50% - 30px);}
+  .keyboard #keyboard_SAVE {left: calc(50% - 46px);}
+  .third .line_text {font-size: 30px; top: calc(50% - 14px);}
+  .third #line_text_unsaved {left: calc(50% - 245px);}
+  .third #line_text_saved {left: calc(50% - 169px);}
+  .bottom_bar .bar_text {margin: 2.1% 1% 1.3% 1%; font-size: 36px; padding: 2.6% 3.2%;}
+}
+@media only screen and (min-width: 650px) and (max-width: 750px) {
+  .think_counter .think_counter_result {font-size: 65px; bottom: 16%;}
+  .think_counter #think_counter1 {font-size: 24px; left: calc(50% - 40px);}
+
+  .activity #activity_text {font-size: 24px; left: calc(50% - 83px);}
+  #point1, #point2 {font-size: 20px;}
+  .mode #mode_title {font-size: 24px; left: calc(50% - 88px);}
+  .mode #mode_text {font-size: 30px; left: calc(50% - 97px); top: calc(50% - 15px);}
+  .colorblock #color_text {font-size: 24px; left: calc(50% - 108px);}
+  .blurblock #blur_text {font-size: 24px; left: calc(50% - 53px); top: calc(50% - 15px);}
+  .third .keyboard {border-radius: 15px;}
+  .keyboard .keyboard_save_shadow, .keyboard_save_body, .mode_screen, .mode_buttom_shadow, .mode_buttom_base {border-radius: 15px;}
+
+  .keyboard .keyboard_text {font-size: 30px; top: calc(50% - 15px);}
+  .keyboard #keyboard_SHIFT {left: calc(50% - 44px);}
+  .keyboard #keyboard_ALT {left: calc(50% - 25px);}
+  .keyboard #keyboard_SAVE {left: calc(50% - 38px);}
+  .third .line_text {font-size: 24px; top: calc(50% - 14px);}
+  .third #line_text_unsaved {left: calc(50% - 196px);}
+  .third #line_text_saved {left: calc(50% - 136px);}
+  .third .line_text2 {left: 79%}
+  .bottom_bar .bar_text {margin: 2.1% 1% 1.3% 1%; font-size: 30px; padding: 2.6% 2.6%;}
+  .first #think4 {animation-delay: -10s;}
+  .content .names {font-size: 18px;}
+  .first #name1 {top: 34.3%; right: 24.6%;}
+  .first #name2 {bottom: 51.1%; left: 26.7%;}
+  .second #name3 {bottom:7.3%; left: 6.2%;}
+}
+
+@media only screen and (min-width: 575px) and (max-width: 649px) {
+  .think_counter .think_counter_result {font-size: 55px; bottom: 16%;}
+  .think_counter #think_counter1 {font-size: 20px; left: calc(50% - 33px);}
+
+  .activity #activity_text {font-size: 20px; left: calc(50% - 69px);}
+  .first #point1, #point2 {font-size: 18px;}
+  .mode #mode_title {font-size: 20px; left: calc(50% - 74px);}
+  .mode #mode_text {font-size: 24px; left: calc(50% - 77px); top: calc(50% - 12px);}
+  .colorblock #color_text {font-size: 20px; left: calc(50% - 90px);}
+  .blurblock #blur_text {font-size: 20px; left: calc(50% - 44px); top: calc(50% - 12px);}
+  .third .keyboard {border-radius: 13px;}
+  .keyboard .keyboard_save_shadow, .keyboard_save_body, .mode_screen, .mode_buttom_shadow, .mode_buttom_base {border-radius: 13px;}
+
+  .keyboard .keyboard_text {font-size: 24px; top: calc(50% - 15px);}
+  .keyboard #keyboard_SHIFT {left: calc(50% - 35px);}
+  .keyboard #keyboard_ALT {left: calc(50% - 20px);}
+  .keyboard #keyboard_SAVE {left: calc(50% - 32px);}
+  .third .line_text {font-size: 20px; top: calc(50% - 10px);}
+  .third #line_text_unsaved {left: calc(50% - 163px);}
+  .third #line_text_saved {left: calc(50% - 113px);}
+  .third .line_text2 {left: 79%}
+  .bottom_bar .bar_text {margin: 2.1% 1% 1.3% 1%; font-size: 24px; padding: 2.6% 2.6%;}
+  .first #think4 {animation-delay: -10s;}
+  h1 {font-size: 20px;}
+  .content .names {font-size: 16px;}
+  .first #name1 {top: 34.3%; right: 24.6%;}
+  .first #name2 {bottom: 51.1%; left: 26.7%;}
+  .second #name3 {bottom:11%; left: 6.2%;}
+}
+@media only screen and (min-width: 501px) and (max-width: 574px) {
+  .think_counter .think_counter_result {font-size: 49px; bottom: 16%;}
+  .think_counter #think_counter1 {font-size: 16px; left: calc(50% - 27px);}
+
+  .activity #activity_text {font-size: 16px; left: calc(50% - 55px);}
+  .first #point1, #point2 {font-size: 14px;}
+  .mode #mode_title {font-size: 16px; left: calc(50% - 59px);}
+  .mode #mode_text {font-size: 20px; left: calc(50% - 64px); top: calc(50% - 10px);}
+  .colorblock #color_text {font-size: 16px; left: calc(50% - 72px);}
+  .blurblock #blur_text {font-size: 16px; left: calc(50% - 35px); top: calc(50% - 10px);}
+  .third .keyboard {border-radius: 10px;}
+  .keyboard .keyboard_save_shadow, .keyboard_save_body {border-radius: 10px;}
+  .keyboard .keyboard_text {font-size: 20px; top: calc(50% - 10px);}
+  .keyboard #keyboard_SHIFT {left: calc(50% - 29px);}
+  .keyboard #keyboard_ALT {left: calc(50% - 17px);}
+  .keyboard #keyboard_SAVE {left: calc(50% - 26px);}
+  .third .line_text {font-size: 16px; top: calc(50% - 10px);}
+  .third #line_text_unsaved {left: calc(50% - 131px);}
+  .third #line_text_saved {left: calc(50% - 90px);}
+  .third .line_text2 {left: 79%; font-size: 16px; top: calc(50% - 10px);}
+  .bottom_bar .bar_text {margin: 2.1% 1% 1.3% 1%; font-size: 20px; padding: 2.6% 2.6%;}
+  .first #think4 {animation-delay: -10s;}
+  h1 {font-size: 15px;}
+  .content .names {font-size: 13px;}
+  .first #name1 {top: 34.3%; right: 24.6%;}
+  .first #name2 {bottom: 51.1%; left: 26.7%;}
+  .second #name3 {bottom:11%; left: 6.2%;}
+  .second .izv_vision {bottom: 0.5%;}
+  .think_counter_image, .activity, .color_mode, .mode_screen, .mode_buttom_shadow, .mode_buttom_base {border-radius: 10px;}
+}
+
+@media only screen and (max-width: 500px) {
   body .sootnosheniye {padding-bottom: 544.06%;}
   .content .first {height: 46.45%;}
   .content .second {height: 34.4%;}
@@ -379,7 +514,7 @@ body .sootnosheniye {padding-bottom: 220.79%;}
   .second .class1440 {display: none;}
   .second .izv_vision {width: 42.63%;  bottom: 10%;}
   .third .izv_third1 {background: url( '../images/third-iphone.svg'); background-size: 100% 100%; width: 100%; height: 78%; top: -6.2%;}
-  .content .names {font-size: 10px;}
+  .content .names {display: none;}
   .first #name1 {top: 27%; right: 17.4%; transform: rotate(-90deg);}
   .first #name2 {bottom: 63.8%; left: 27.6%;}
   .second #name3 {bottom: 26%; left: -4%; transform: rotate(-90deg);}
@@ -408,4 +543,36 @@ body .sootnosheniye {padding-bottom: 220.79%;}
   .allpage #fp4-iphone {position: absolute; width: 45.8%; bottom: 5%; left: 3.9%;}
   .allpage #fp5-iphone {position: absolute; width: 43.2%; bottom: 33%; left: auto; right: 0;}
   .allpage #fp6-iphone {position: absolute; width: 27.5%; bottom: 48.7%; right: -3.5%;}
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 500px) {
+  .think_counter .think_counter_result {font-size: 70px; bottom: 16%;}
+  .think_counter #think_counter1 {font-size: 24px; left: calc(50% - 40px);}
+
+  .activity #activity_text {font-size: 24px; left: calc(50% - 83px);}
+  .first #point1, #point2 {font-size: 20px;}
+  .mode #mode_title {font-size: 24px; left: calc(50% - 88px);}
+  .mode #mode_text {font-size: 26px; left: calc(50% - 84px); top: calc(50% - 13px);}
+  .colorblock #color_text {font-size: 20px; left: calc(50% - 90px);}
+  .blurblock #blur_text {font-size: 20px; left: calc(50% - 44px); top: calc(50% - 11px);}
+  .third .keyboard {border-radius: 10px;}
+  .keyboard .keyboard_save_shadow, .keyboard_save_body {border-radius: 10px;}
+  .keyboard .keyboard_text {font-size: 26px; top: calc(50% - 13px);}
+  .keyboard #keyboard_SHIFT {left: calc(50% - 38px);}
+  .keyboard #keyboard_ALT {left: calc(50% - 22px);}
+  .keyboard #keyboard_SAVE {left: calc(50% - 33px);}
+  .third .line_text {font-size: 20px; top: calc(50% - 10px);}
+  .third #line_text_unsaved {left: calc(50% - 163px);}
+  .third #line_text_saved {left: calc(50% - 113px);}
+  .third .line_text2 {left: 84%; font-size: 16px; top: calc(50% - 7px);}
+  .bottom_bar .bar_text {margin: 3.5% 1% 1.3% 1%; font-size: 24px; padding: 2.6% 2.6%;}
+  .first #think4 {animation-delay: -10s;}
+  h1 {font-size: 24px;}
+  .content .names {font-size: 18px;}
+
+  .second .izv_vision {bottom: 9%;}
+  .think_counter_image, .activity, .color_mode {border-radius: 10px;}
+  .class-iphone-extra {display: block;}
+  .class-iphone {display: none;}
 }
