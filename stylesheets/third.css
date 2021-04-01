@@ -124,16 +124,15 @@
   display: none;
 }
 .light_triangle {
-  mask-type: alpha;
   width: 5%;
-  height: 8.35%;
-  -webkit-mask: url("https://karinamulk.github.io/webplakat_js/images/triangle.svg");
+  height: 9.25%;
+  right: 8.25%;
+  border-radius: 15px;
   background: #F8E436;
   position: absolute;
-  right: 8.5%;
   top: 16.6%;
+  transform: rotate(45deg);
   animation: light2 2s steps(1) infinite;
-  -webkit-mask-position: 0 0;
 }
 @keyframes light2 {
   0% {background: #F28EC0;}
