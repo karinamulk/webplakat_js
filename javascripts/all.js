@@ -581,6 +581,8 @@ $(document).ready(function(){
       $(".light_triangle").removeClass("stop");
       $(".light_round").removeClass("stop");
       $(".line_text2").removeClass("stop");
+      $("body").css("overflow", "visible");
+
     }, 3100);
     setTimeout(function(){
       $(".allpage").css("display", "none");
