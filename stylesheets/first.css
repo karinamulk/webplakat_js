@@ -98,7 +98,7 @@ border: 5px solid #71B4A9;
   font-size: 90px;
   color: #A4DDD4;
   bottom: 15%;
-  opacity: 0;
+  /* opacity: 0; */
 }
 #think_counter_result1 {
   left: 16.4%;
