@@ -7,7 +7,7 @@
   font-size: 36px;
   color: #A4DDD4;
   animation-play-state: paused;
-  /* display: none; */
+  display: none;
   z-index: 21;
 }
 
