@@ -4,28 +4,31 @@
   height: 81.2%;
   left: 4.86%;
   top: 10%;
-  /* opacity: 70%; */
-  /* display: none; */
+  opacity: 70%;
   background: #F28EC0;
   border-radius: 18px;
   transition: all .3s;
-  display: none;
+
 }
 .firstpage_text {
-  height: 19.2%;
+
   position: absolute;
 }
 #dobro {
   left: 3.3%;
   top: 19.3%;
+  width: 27.4%;
 }
 #pozhal {
   right: 3.3%;
   top: 19.3%;
+  width: 60.7%;
+
 }
 #mozg {
   top: 44.7%;
   left: 34%;
+  width: 32.2%;
 }
 .firstpage_round {
   position: absolute;
@@ -46,37 +49,39 @@
 }
 #fp1 {
   position: absolute;
-  height: 18%;
+  width: 6.6%;
   top: 0;
   left: 19.7%;
 }
 #fp2 {
   position: absolute;
-  height: 18%;
+  width: 8.9%;
+
   top: 0;
   right: 41%;
 }
 #fp3 {
   position: absolute;
-  height: 18%;
+  width: 18.8%;
   top: 0;
   right: 6.3%;
 }
 #fp4 {
   position: absolute;
-  height: 34%;
+  width: 23.8%;
   bottom: 25.4%;
   left: 0;
 }
 #fp5 {
   position: absolute;
-  height: 30%;
+  width: 41.15%;
   bottom: 6.33%;
   left: 2.25%;
 }
 #fp6 {
   position: absolute;
-  height: 38.4%;
+  width: 51.2%;
+
   bottom: 16.7%;
   right: 0%;
 }
