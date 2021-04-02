@@ -547,7 +547,7 @@ body .sootnosheniye {padding-bottom: 220.79%;}
 
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-  .think_counter .think_counter_result {font-size: 70px; bottom: 16%;}
+  .think_counter .think_counter_result {font-size: 57px; bottom: 16%;}
   .think_counter #think_counter1 {font-size: 24px; left: calc(50% - 40px);}
 
   .activity #activity_text {font-size: 24px; left: calc(50% - 83px);}
