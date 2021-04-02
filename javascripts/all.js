@@ -505,6 +505,9 @@ $(document).ready(function(){
     if ($(window).width() < 768) {
       $("#mode_text").css("left", "calc(50% - 44px)");
     }
+    if ($(window).width() < 501 && $(window).width() > 399) {
+      $("#mode_text").css("left", "calc(50% - 76px)");
+    }
     $("#think1_text").html(lite[0]);
     $("#think2_text").html(lite[1]);
     $("#think3_text").html(lite[2]);
@@ -531,6 +534,9 @@ $(document).ready(function(){
     }
     if ($(window).width() < 768) {
       $("#mode_text").css("left", "calc(50% - 48px)");
+    }
+    if ($(window).width() < 501 && $(window).width() > 399) {
+      $("#mode_text").css("left", "calc(50% - 84px)");
     }
     $("#think1_text").html(serious[0]);
     $("#think2_text").html(serious[1]);
