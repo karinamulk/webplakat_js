@@ -1,4 +1,5 @@
 @import 'reset.css';
+@import "basic.css";
 @import "first.css";
 @import "second.css";
 @import "third.css";
